@@ -54,130 +54,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*@font-face {
-    font-family: 'proxima_nova_blblack';
-    src: url('../fonts/proximanova-black-webfont.eot');
-    src: url('../fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-black-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-black-webfont.woff') format('woff'),
-         url('../fonts/proximanova-black-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-black-webfont.svg#proxima_nova_blblack') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
 @font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url('../fonts/proximanova-bold-webfont.eot');
-    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
-         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'Cam';
+  src: url("../fonts/Cam.eot?#iefix") format("embedded-opentype"), url("../fonts/Cam.woff") format("woff"), url("../fonts/Cam.ttf") format("truetype"), url("../fonts/Camb.svg#Cambria") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-
-
-
 @font-face {
-    font-family: 'proxima_novabold_italic';
-    src: url('../fonts/proximanova-boldit-webfont.eot');
-    src: url('../fonts/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-boldit-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-boldit-webfont.woff') format('woff'),
-         url('../fonts/proximanova-boldit-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-boldit-webfont.svg#proxima_novabold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'OpenSans-Semibold';
+  src: url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype"), url("../fonts/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-
-
-
 @font-face {
-    font-family: 'proxima_nova_ltlight';
-    src: url('../fonts/proximanova-light-webfont.eot');
-    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-light-webfont.woff') format('woff'),
-         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-light-webfont.svg#proxima_nova_ltlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-
-
-
-@font-face {
-    font-family: 'proxima_novalight_italic';
-    src: url('../fonts/proximanova-lightit-webfont.eot');
-    src: url('../fonts/proximanova-lightit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-lightit-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-lightit-webfont.woff') format('woff'),
-         url('../fonts/proximanova-lightit-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-lightit-webfont.svg#proxima_novalight_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('../fonts/proximanova-reg-webfont.eot');
-    src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-reg-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-reg-webfont.woff') format('woff'),
-         url('../fonts/proximanova-reg-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-reg-webfont.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'proxima_novaregular_italic';
-    src: url('../fonts/proximanova-regit-webfont.eot');
-    src: url('../fonts/proximanova-regit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-regit-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-regit-webfont.woff') format('woff'),
-         url('../fonts/proximanova-regit-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-regit-webfont.svg#proxima_novaregular_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'proxima_nova_thextrabold';
-    src: url('../fonts/proximanova-xbold-webfont.eot');
-    src: url('../fonts/proximanova-xbold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/proximanova-xbold-webfont.woff2') format('woff2'),
-         url('../fonts/proximanova-xbold-webfont.woff') format('woff'),
-         url('../fonts/proximanova-xbold-webfont.ttf') format('truetype'),
-         url('../fonts/proximanova-xbold-webfont.svg#proxima_nova_thextrabold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-} */
 /**
  * Wraps any styles in a retina media query.
  */
@@ -267,6 +161,11 @@ h1 {
   margin-top: 0px;
 }
 
+p {
+  font-size: 17px;
+  line-height: 22px;
+}
+
 input, textarea {
   outline: none;
   -webkit-appearance: none;
@@ -277,8 +176,8 @@ input, textarea {
   border-radius: 0px;
 }
 
-#page {
-  background: url();
+.main_section {
+  overflow: hidden;
   background: url(../images/bg_main.jpg) no-repeat;
   background-position: top center;
 }
@@ -290,7 +189,7 @@ input, textarea {
 }
 
 .first_slide {
-  height: 1358px;
+  height: 1237px;
   position: relative;
 }
 
@@ -298,7 +197,7 @@ input, textarea {
   display: block;
   width: 219px;
   height: 76px;
-  background-image: url('../images/sprites/icons-s77826d87a9.png');
+  background-image: url('../images/sprites/icons-s069230835f.png');
   background-position: 0 0;
   background-repeat: repeat-y;
   /**
@@ -314,13 +213,334 @@ input, textarea {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .logo {
-    background-image: url('../images/sprites-retina/icons-s12e358750c.png');
-    -moz-background-size: 219px 142px;
-    -o-background-size: 219px 142px;
-    -webkit-background-size: 219px 142px;
-    background-size: 219px 142px;
+    background-image: url('../images/sprites-retina/icons-s2c96c0b2fa.png');
+    -moz-background-size: 219px 274px;
+    -o-background-size: 219px 274px;
+    -webkit-background-size: 219px 274px;
+    background-size: 219px 274px;
     background-position: 0 0;
   }
+}
+
+.first_info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  float: right;
+  color: #fff;
+  margin: 63px 0 21px 0;
+}
+
+nav {
+  float: right;
+  clear: right;
+}
+nav ul {
+  display: block;
+  padding: 24px 0px 19px 20px;
+  background-color: #1d2226;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #d7c5a2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav ul li.sep {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav ul:after {
+  content: "";
+  background-color: #1d2226;
+  width: 1000px;
+  height: 100%;
+  left: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.about_k {
+  background: url(../images/bg_krahmanov.png) no-repeat;
+  height: 303px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.about_k .left_info {
+  width: 556px;
+  float: left;
+  text-align: right;
+  color: #f2d8a7;
+  padding-top: 49px;
+}
+.about_k .left_info h1 {
+  text-transform: uppercase;
+  letter-spacing: -0.1px;
+}
+.about_k .left_info span {
+  font-family: 'OpenSans-Semibold';
+  padding-bottom: 19px;
+  display: inline-block;
+}
+.about_k .left_info p {
+  color: #fff;
+}
+.about_k .right_info {
+  color: #263340;
+  float: right;
+  width: 372px;
+  height: 100%;
+}
+.about_k .right_info .ttl {
+  padding-bottom: 21px;
+  padding-top: 30px;
+}
+.about_k .right_info p {
+  font-size: 14px;
+  line-height: 17px;
+}
+.about_k .right_info a {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Cam';
+}
+
+div.like_tbl {
+  display: table;
+  height: 100%;
+}
+
+div.like_td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ttl {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'OpenSans-Bold';
+}
+
+p.dot {
+  float: right;
+  clear: right;
+  position: relative;
+  padding-bottom: 4px;
+}
+p.dot:before {
+  position: absolute;
+  content: "\2022";
+  left: -15px;
+  top: 0px;
+}
+
+.direction_slide {
+  height: 622px;
+  overflow: hidden;
+}
+.direction_slide .info_text {
+  margin-top: 160px;
+  width: 644px;
+  margin-right: 73px;
+  float: right;
+}
+.direction_slide .info_text h2 {
+  font-family: 'Cam';
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #293643;
+  color: #fff;
+  padding: 25px 16px 22px 60px;
+  margin-bottom: 49px;
+}
+.direction_slide .info_text p {
+  text-align: justify;
+  padding: 0 80px 31px 60px;
+  color: #263340;
+  font-size: 16px;
+  line-height: 19px;
+}
+.direction_slide .info_text p b {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.foto_slide .foto_menu {
+  padding: 91px 0 0 0;
+  overflow: hidden;
+}
+.foto_slide .foto_menu h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #f2d8a7;
+  font-family: 'Cam';
+  text-align: right;
+  width: 302px;
+  margin-right: 130px;
+  float: left;
+}
+.foto_slide .foto_menu .fitem {
+  float: left;
+  padding-top: 5px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #8e9090;
+  font-family: 'Cam';
+}
+.foto_slide .foto_menu .fitem a:hover {
+  color: #f2d8a7;
+}
+.foto_slide .foto_menu .fitem.selected {
+  position: relative;
+}
+.foto_slide .foto_menu .fitem.selected:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #f2d8a7;
+  left: 2px;
+  top: -9px;
+}
+.foto_slide .foto_menu .fitem.selected a {
+  color: #f2d8a7;
+  text-decoration: underline;
+}
+.foto_slide .foto_menu .fitem.empty {
+  padding: 5px 3px 0 3px;
+  font-weight: bold;
+}
+.foto_slide .foto_menu2 {
+  overflow: hidden;
+  padding: 65px 0 46px 0;
+}
+.foto_slide .foto_menu2 .item {
+  width: 230px;
+  float: left;
+}
+.foto_slide .foto_menu2 .item.first {
+  width: 302px;
+  margin-right: 130px;
+  text-align: right;
+}
+.foto_slide .foto_menu2 a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+.foto_slide .foto_menu2 a:hover {
+  color: #f2d8a7;
+}
+.foto_slide .foto_menu2 a.selected {
+  color: #f2d8a7;
+}
+
+.swiper_padding_wrapper {
+  margin: 0 35px;
+  position: relative;
+}
+.swiper_padding_wrapper .swiper-button-next, .swiper_padding_wrapper .swiper-button-prev {
+  background-size: auto;
+  margin-top: -77px;
+}
+.swiper_padding_wrapper .swiper-button-next {
+  width: 36px;
+  height: 64px;
+  right: -59px;
+  background-image: url('../images/sprites/icons-s069230835f.png');
+  background-position: 0 -144px;
+  background-repeat: repeat-y;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .swiper_padding_wrapper .swiper-button-next {
+    background-image: url('../images/sprites-retina/icons-s2c96c0b2fa.png');
+    -moz-background-size: 219px 274px;
+    -o-background-size: 219px 274px;
+    -webkit-background-size: 219px 274px;
+    background-size: 219px 274px;
+    background-position: 0 -144px;
+  }
+}
+.swiper_padding_wrapper .swiper-button-prev {
+  width: 36px;
+  height: 64px;
+  left: -58px;
+  background-image: url('../images/sprites/icons-s069230835f.png');
+  background-position: 0 -210px;
+  background-repeat: repeat-y;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .swiper_padding_wrapper .swiper-button-prev {
+    background-image: url('../images/sprites-retina/icons-s2c96c0b2fa.png');
+    -moz-background-size: 219px 274px;
+    -o-background-size: 219px 274px;
+    -webkit-background-size: 219px 274px;
+    background-size: 219px 274px;
+    background-position: 0 -210px;
+  }
+}
+
+.swiper_padding_wrapper2 {
+  margin: 0 24px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 616px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 616px;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  height: 147px;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: -39px;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 20%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
 }
 
 /*@import "320";
