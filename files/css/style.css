@@ -1,0 +1,327 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*@font-face {
+    font-family: 'proxima_nova_blblack';
+    src: url('../fonts/proximanova-black-webfont.eot');
+    src: url('../fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-black-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-black-webfont.woff') format('woff'),
+         url('../fonts/proximanova-black-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-black-webfont.svg#proxima_nova_blblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novabold_italic';
+    src: url('../fonts/proximanova-boldit-webfont.eot');
+    src: url('../fonts/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-boldit-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-boldit-webfont.woff') format('woff'),
+         url('../fonts/proximanova-boldit-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-boldit-webfont.svg#proxima_novabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_ltlight';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-light-webfont.svg#proxima_nova_ltlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novalight_italic';
+    src: url('../fonts/proximanova-lightit-webfont.eot');
+    src: url('../fonts/proximanova-lightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-lightit-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-lightit-webfont.woff') format('woff'),
+         url('../fonts/proximanova-lightit-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-lightit-webfont.svg#proxima_novalight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/proximanova-reg-webfont.eot');
+    src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-reg-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+         url('../fonts/proximanova-reg-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-reg-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaregular_italic';
+    src: url('../fonts/proximanova-regit-webfont.eot');
+    src: url('../fonts/proximanova-regit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regit-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regit-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regit-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regit-webfont.svg#proxima_novaregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_nova_thextrabold';
+    src: url('../fonts/proximanova-xbold-webfont.eot');
+    src: url('../fonts/proximanova-xbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-xbold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-xbold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-xbold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-xbold-webfont.svg#proxima_nova_thextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+/**
+ * Wraps any styles in a retina media query.
+ */
+/**
+ * Option variable to define the spacing between images in the generated sprite
+ */
+/**
+ * A mixin to create retina sprites with hover & active states
+ *
+ * You have to register a pair of sprites using `{@link #retina-sprite-add}` and then you can use this mixin:
+ *
+ *     @include retina-sprite-add(icons, "icons/*.png", "icons-retina/*.png");
+ *
+ *     .my-icon {
+ *       @include retina-sprite(icon-name, icons);
+ *     }
+ *
+ * @param {String} $name
+ * @param {String} [$sprite-name]
+ * @param {Boolean} [$hover=false]
+ * @param {Boolean} [$active=false]
+ */
+/**
+ * @param {String} $name
+ * @param {String} $path
+ * @param {String} $path2x
+ */
+/**
+ * Mixin for retina backgrounds where you can't use a sprite.
+ *
+ * - Make sure you have a file@2x.png file additional to your file.png.
+ * - The mixin prepends $imgPath, which should be set globally at some point. Default is: "img/"
+ *
+ * Examples:
+ *     li {
+ *       @include retina-background(arrow, no-repeat 10px 15px)
+ *     }
+ *
+ *     a.external {
+ *       @include retina-background(external, no-repeat right)
+ *     }
+ *
+ * @param {String} $file Path to file relative to images folder defined in config.rb and without a file extension
+ * @param {Object} [$attr] Additional attributes like position or repetition. E.g. `no-repeat top right`
+ * @param {String} [$type] The file type.
+ */
+/**/
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: #000;
+}
+
+table {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a, img, a:active, a:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Cam';
+  font-size: 30px;
+  line-height: 44px;
+  padding: 0;
+  margin-top: 0px;
+}
+
+input, textarea {
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+}
+
+#page {
+  background: url();
+  background: url(../images/bg_main.jpg) no-repeat;
+  background-position: top center;
+}
+
+.width_wrapper {
+  width: 1180px;
+  display: block;
+  margin: 0 auto;
+}
+
+.first_slide {
+  height: 1358px;
+  position: relative;
+}
+
+.logo {
+  display: block;
+  width: 219px;
+  height: 76px;
+  background-image: url('../images/sprites/icons-s77826d87a9.png');
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+  position: absolute;
+  left: 183px;
+  top: 87px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .logo {
+    background-image: url('../images/sprites-retina/icons-s12e358750c.png');
+    -moz-background-size: 219px 142px;
+    -o-background-size: 219px 142px;
+    -webkit-background-size: 219px 142px;
+    background-size: 219px 142px;
+    background-position: 0 0;
+  }
+}
+
+/*@import "320";
+@import "768";*/
