@@ -43,8 +43,6 @@
 		</div>-->
 		
 		<div class="main_section">
-			
-			
 			<div class="width_wrapper">
 				<div class="first_slide">
 				
@@ -95,6 +93,8 @@
 					
 				</div>
 				
+			
+				
 				<div class="direction_slide">
 					<div class="info_text">
 						<h2 class="lr_pad">КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ ОПЕРАЦИЙ</h2>
@@ -116,6 +116,11 @@
 					</div>
 				</div>
 				
+			</div>
+		</div>
+		
+		<div class="second_slide">
+			<div class="width_wrapper">	
 				<div class="foto_slide">
 					<div class="foto_menu">
 						<h2>ФОТО ОПЕРАЦИЙ:</h2>
@@ -150,8 +155,8 @@
 						
 					</div>
 					
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next gallery"></div>
+					<div class="swiper-button-prev gallery"></div>
 					
 					<div class="swiper_padding_wrapper2">
 						<div class="swiper-container gallery-thumbs">
@@ -167,8 +172,8 @@
 				
 				<script>
 				var galleryTop = new Swiper('.gallery-top', {
-					nextButton: '.swiper-button-next',
-					prevButton: '.swiper-button-prev',
+					nextButton: '.gallery.swiper-button-next',
+					prevButton: '.gallery.swiper-button-prev',
 					spaceBetween: 4,
 					loopedSlides: 4,
 					loop: true
@@ -191,40 +196,230 @@
 				//galleryTop.slideTo(2, 0, false);
 				
 				</script>
-				
-				
+	
 				
 			</div>
-			
-			<!--
-			<div class="top_menu">
-				<div class="width_wrapper">
-					<div class="left_col">
-						<nav>
-							<ul id="desktop-menu">
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Акции</a></li>
-								<li><a href="#">Шины</a></li>
-								<li><a href="#">Обучение</a></li>
-								<li><a href="#">Общение</a></li>
-								<li><a href="#">Призы</a></li>
-								<li><a href="#">Рейтинги</a></li>
-							</ul>
-							<span></span>
-						</nav>
+		</div>
+		
+		
+		<div class="about_slide">
+			<div class="width_wrapper">	
+				<div class="about_menu">
+				
+						<div class="fitem selected"><a href="javascript:;">О ХИРУРГЕ</a></div>
+						<div class="fitem empty">...............</div>
+						<div class="fitem"><a href="javascript:;">ОБРАЗОВАНИЕ</a></div>
+						<div class="fitem empty">...............</div>
+						<div class="fitem"><a href="javascript:;">ГАРАНТИИ</a></div>
+				</div>
+				
+				<div class="about_text">
+					<div class="about_text_wrapper">
+						<h2>ЭЛЬДАР БЕГРАЛОВИЧ КАХРАМАНОВ</H2>
+						<span>пластический хирург</span>
+						<p class="dot">
+							Первый в России сертифицированный специалист по инновационному увеличению груди по методике ведущего европейского хирурга, президента
+							ассоциации пластицеских хирургов Швеции Уэльфа Самуэльссона.
+						</p>
+						
+						<p class="dot">
+							Член Ассоциации пластичесих хирургов  Общества пластической реконструктивной эстетической хирургии (ОПРЭХ).
+						</p>
+						
+						<p class="dot">
+							Автор уникальных методик при операции увеличения груди: сохраность функций молочных желез, невидимые швы, восстановление формы груди при самых различных аномалиях и деформациях.
+						</p>
+						
+						<p class="dot">
+							Признан одним из лучших пластических хирургов в области хирургии груди в России независимым рейтингом пациентов.
+						</p>
+						<p class="dot">
+							Является обладателем многократных премий и наград, как лучший пластический хирург в пластике молочных желез.
+						</p>
+						
+						<div class="attention">ПОСЕТИТЕЛЯМИ НЕЗАВИСИМОГО РЕЙТИНГА ПЛАСТИЧЕСКИХ ХИРУРГОВ, КАХРАМАНОВ ЭЛЬДАР БЫЛ ПРИЗНАН ЛУЧШИМ ПЛАСТИЧЕСКИМ ХИРУРГОМ ПО УВЕЛИЧЕНИЮ ГРУДИ с 2014 по 2016 года!
+						
+						</div>
 					</div>
-					<div class="right_col" id="for_search">
-						<div class="search_wrapper">
-							<input type="text" name="s" placeholder="Введите поисковый запрос">
-							<a href="#" class="search_button"></a>
+				</div>
+				
+				
+				
+				<div class="swiper_padding_wrapper for_foto" id="foto-slider">
+					<div class="swiper-container gallery-foto" id="gallery-foto">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+						</div>
+					</div>
+					
+					<div class="swiper-button-next foto"></div>
+					<div class="swiper-button-prev foto"></div>
+				</div>
+				
+				<script>
+				var galleryFoto = new Swiper('#gallery-foto', {
+					nextButton: '.foto.swiper-button-next',
+					prevButton: '.foto.swiper-button-prev',
+					slidesPerView: 'auto',
+					loop: true,
+					centeredSlides: true,
+					paginationClickable: true
+				});
+				
+				galleryFoto.slideTo(2, 0, false);
+				</script>
+				
+				
+				<h2 class="subttl"><span>ЭЛЬДАР КАХРАМАНОВ</span> ОТЗЫВЫ ПАЦИЕНТОВ <span><a class="btn1" href="#">НАПИСАТЬ ОТЗЫВ</a></span></h2>
+				
+				
+				
+				<div class="swiper_padding_wrapper for_foto">
+					<div class="swiper-container gallery-foto" id="response_slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+						</div>
+					</div>
+					
+					<div class="swiper-button-next resp"></div>
+					<div class="swiper-button-prev resp"></div>
+				</div>
+				
+				<script>
+				var galleryFoto = new Swiper('#response_slider', {
+					nextButton: '.resp.swiper-button-next',
+					prevButton: '.resp.swiper-button-prev',
+					slidesPerView: 'auto',
+					loop: true,
+					centeredSlides: true,
+					paginationClickable: true
+				});
+				
+				galleryFoto.slideTo(2, 0, false);
+				</script>
+				
+				
+				
+				
+					
+			</div>
+			
+			<div class="about_slide2">
+				<div class="width_wrapper">	
+					<div class="about_foto">
+						<div class="info">
+							Победитель  профессионального конкурса<br/><br/>
+							<b>&laquo;ЛУЧШИЙ ПЛАСТИЧЕСКИЙ ХИРУРГ<br/>
+							ПО УВЕЛИЧЕНИЮ ГРУДИ&raquo;</b><br/><br/>
+							издательство &laquo;Красота и здоровье&raquo;
+							
 						</div>
 					</div>
 				</div>
 			</div>
-			-->
-
 			
 		</div>
+		
+		
+		
+		<div class="blog_slide">
+			<div class="blog_width_wrapper">	
+			
+				<h2>БЛОГ ПЛАСТИЧЕСКОГО ХИРУРГА</h2>
+			
+			
+				<div class="swiper_padding_wrapper for_blog">
+					<div class="swiper-container" id="blog_slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="blog_link"><a href="#" style="background-image:url(files/images/content/b1.jpg)"></a></td>
+										<td class="blog_txt">
+											<div>
+												<a href="#">Какой доступ лучше при<br/> увеличивающей&nbsp;мамопластике</a>
+												<p>Став единственным сертифицированным специалистом в России инновационному увеличению груди
+												по методике ведущего европейского хирурга, президента ассоциации палстических хирургов.
+												</p>
+											</div>
+										</td>
+									</tr>
+									
+									<tr><td colspan="2" class="spacer"></td></tr>
+									
+									<tr>
+										<td class="blog_link"><a href="#" style="background-image:url(files/images/content/b2.jpg)"></a></td>
+										<td class="blog_txt">
+											<div>
+												<a href="#">Какой доступ лучше при<br/> увеличивающей&nbsp;мамопластике</a>
+												<p>Став единственным сертифицированным специалистом в России инновационному увеличению груди
+												по методике ведущего европейского хирурга, президента ассоциации палстических хирургов.
+												</p>
+											</div>
+										</td>
+									</tr>
+									
+									<tr><td colspan="2" class="spacer"></td></tr>
+									
+									<tr>
+										<td class="blog_link"><a href="#" style="background-image:url(files/images/content/b3.jpg)"></a></td>
+										<td class="blog_txt">
+											<div>
+												<a href="#">Какой доступ лучше при<br/> увеличивающей&nbsp;мамопластике</a>
+												<p>Став единственным сертифицированным специалистом в России инновационному увеличению груди
+												по методике ведущего европейского хирурга, президента ассоциации палстических хирургов.
+												</p>
+											</div>
+										</td>
+									</tr>
+									
+								</table>
+							
+							
+							</div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+						</div>
+					</div>
+					
+					<div class="swiper-button-next resp"></div>
+					<div class="swiper-button-prev resp"></div>
+				</div>
+				
+				<script>
+				var galleryFoto = new Swiper('#response_slider', {
+					nextButton: '.resp.swiper-button-next',
+					prevButton: '.resp.swiper-button-prev',
+					slidesPerView: 1,
+					loop: true,
+					centeredSlides: true,
+					paginationClickable: true
+				});
+				
+				galleryFoto.slideTo(2, 0, false);
+				</script>
+				
+			</div>
+		</div>
+		
+		
+		
 		<footer>
 			<div class="width_wrapper">
 				&copy;2017. All rights reserved.
