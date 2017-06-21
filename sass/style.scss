@@ -85,6 +85,20 @@ input, textarea {
   font-family: 'Cam';
 }
 
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+}
+
 
 #page {
 	
@@ -122,6 +136,17 @@ input, textarea {
 	top: 87px;
 }
 
+.logom {
+	
+	display: block; 
+	top: 11px;
+	left: -50px;
+	@include opacity(0);
+	position: absolute;
+	
+	@include transition(all, 2s, ease-in-out);
+}
+
 .first_info {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -129,6 +154,10 @@ input, textarea {
 	float: right;
 	color: #fff;
 	margin: 63px 0 21px 0;
+}
+
+a:hover {
+	@include transition(all, 0.2s, ease-in-out);
 }
 
 nav {
@@ -150,9 +179,9 @@ nav {
 			
 			&.sep { padding-left: 20px; padding-right: 20px;}
 			
-			a {
-				
-				
+			a:hover{
+				color: #f2d8a7;
+				text-decoration: underline;
 			}
 			
 		}
@@ -165,10 +194,63 @@ nav {
 			left: 100%;
 			position: absolute;
 			top: 0px;
+			z-index: 100;
 		}
 	}
+}
+
+.for_mobile_wrapper.fix {
+	position: fixed;
+	background-color:#1d2226;
+	left: 0px;
+	width: 100%;
+	z-index:1002;
 	
 	
+	.width_wrapper {
+		height: 65px;
+		position: relative;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.logo {display: none;}
+	
+	.logom {
+		
+		width: 110px;
+		height: 38px;
+		@include retina-sprite(logom);
+		display: block;
+		
+		left: 10px;
+		float: left;
+		z-index:1002;
+		@include opacity(1);
+	}
+	
+	.first_info { display: none;} 
+	
+	nav { 
+		
+		ul { 
+			background-color:#22261d;
+		}
+		
+		
+		&:before {
+				content: "";
+				background-color:#1d2226;
+				width: 1000px;
+				height:100%;
+				right: 100%;
+				position: absolute;
+				top: 0px;
+				z-index: 100;
+			}
+		
+	}
 }
 
 .about_k {
@@ -420,7 +502,7 @@ p.dot {
 		  filter: gray;
     }
     .gallery-thumbs .swiper-slide-active {
-        opacity: 1;
+        @include opacity(1);
     }
 
 .about_slide{
