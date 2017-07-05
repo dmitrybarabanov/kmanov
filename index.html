@@ -6,8 +6,8 @@
 
 	<link rel="stylesheet" media="screen" href="files/css/style.css">
 
-	<script src="files/js/jquery-2.1.4.min.js"></script><!--NEW-->
-	<script src="files/js/jquery.easing.1.3.min.js"></script><!--NEW-->
+	<script src="files/js/jquery-2.1.4.min.js"></script>
+	<script src="files/js/jquery.easing.1.3.min.js"></script>
 	<!--<script src="files/js/validate.js"></script> -->
 	
 	
@@ -147,43 +147,69 @@
 						</div>
 					</div>
 				</div>
+			</div>
 				
-				
-				<div class="swiper_padding_wrapper">
-					<div class="swiper-container gallery-top">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
+			<div class="left_right_wrapper">
+				<div class="width_wrapper">	
+					<div class="swiper_padding_wrapper">
+						<div class="left_blur_image">
+							<img src="files/images/content/g1.jpg">
 						</div>
-					 
-						
-					</div>
-					
-					<div class="swiper-button-next gallery"></div>
-					<div class="swiper-button-prev gallery"></div>
-					
-					<div class="swiper_padding_wrapper2">
-						<div class="swiper-container gallery-thumbs">
+						<div class="right_blur_image">
+							<img src="files/images/content/g1.jpg">
+						</div>
+						<div class="swiper-container gallery-top">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
-								<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
-								<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
-								<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
+								<div class="swiper-slide" data-num="0" style="background-image:url(files/images/content/g1.jpg)"></div>
+								<div class="swiper-slide" data-num="1" style="background-image:url(files/images/content/g_2.jpg)"></div>
+								<div class="swiper-slide" data-num="2" style="background-image:url(files/images/content/g_3.jpg)"></div>
+								<div class="swiper-slide" data-num="3" style="background-image:url(files/images/content/g_4.jpg)"></div>
+								<div class="swiper-slide" data-num="4" style="background-image:url(files/images/content/g_5.jpg)"></div>
+							</div>
+						</div>
+						
+						<div class="swiper-button-next gallery"></div>
+						<div class="swiper-button-prev gallery"></div>
+						
+						<div class="swiper_padding_wrapper2">
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
+									<div class="swiper-slide" style="background-image:url(files/images/content/g_2.jpg)"></div>
+									<div class="swiper-slide" style="background-image:url(files/images/content/g_3.jpg)"></div>
+									<div class="swiper-slide" style="background-image:url(files/images/content/g_4.jpg)"></div>
+									<div class="swiper-slide" style="background-image:url(files/images/content/g_5.jpg)"></div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 				
 				<script>
+				var g_count = 5;
+				var images = ["files/images/content/g1.jpg", "files/images/content/g_2.jpg", "files/images/content/g_3.jpg", "files/images/content/g_4.jpg",  "files/images/content/g_5.jpg"];
+
+				
+				
 				var galleryTop = new Swiper('.gallery-top', {
 					nextButton: '.gallery.swiper-button-next',
 					prevButton: '.gallery.swiper-button-prev',
 					spaceBetween: 4,
 					loopedSlides: 4,
-					loop: true
-				});
+					loop: true,
+					onSlideChangeEnd: function (swiper) {
+					
+						//console.log($(".gallery-top .swiper-slide-active").data("num")-1);
+					
+						ChangeLeftImage($(".gallery-top .swiper-slide-active").data("num"));
+						ChangeRightImage($(".gallery-top .swiper-slide-active").data("num"));
+						
+						
+					}
+				},
+					
+				);
 				var galleryThumbs = new Swiper('.gallery-thumbs', {
 					spaceBetween: 4,
 					centeredSlides: false,
@@ -199,12 +225,29 @@
 				galleryTop.params.control = galleryThumbs;
 				galleryThumbs.params.control = galleryTop;
 				
+				
+				function ChangeLeftImage(index)
+				{
+					var left_index = (index-1+g_count)%g_count;
+					
+					//$(".left_blur_image img").attr("src", images[left_index]);
+					
+					//
+					$(".left_blur_image img").attr("src", images[left_index]);
+					
+				}
+				
+				function ChangeRightImage(index)
+				{
+					var left_index = (index+1+g_count)%g_count;
+					
+					$(".right_blur_image img").attr("src", images[left_index]);
+				}
+				
 				//galleryTop.slideTo(2, 0, false);
 				
 				</script>
 	
-				
-			</div>
 		</div>
 		
 		

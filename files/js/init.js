@@ -1,20 +1,37 @@
 var mobileWidth = 766;
+var is_mobile = false;
 
 jQuery(document).ready(function( $ ) {
 
 	is_mobile = ($(window).width()<=mobileWidth);
 	
-	
-	
-	
 	$('nav').attr("data-width", $('nav').outerWidth());
 	
 	_init_top_menu();
-	
 	_default_init();
-	
+	_init_main_page_scroll();
 
 });
+
+
+function _init_main_page_scroll()
+{
+	// Home
+	if (is_mobile==false)
+	{
+		var parallaxBlock = $('.about_k'),
+			//amp = 0.3;
+			amp = 0.33;
+		if(parallaxBlock.length) {
+			$(document).on('scroll', function() {
+				var scrollTop = $(window).scrollTop(),
+					dist = parseInt(scrollTop * amp);
+
+				parallaxBlock.css('transform', 'translateY(-'+ dist +'px)');
+			});
+		}
+	}
+}
 
 
 function _init_top_menu()
@@ -36,19 +53,4 @@ function _default_init()
 	if( scrolled <= 100 ) {     
 		$('.for_mobile_wrapper').removeClass('fix'); 
 	}
-	
-	/*
-	var scrolled = $(this).scrollTop();
-	if( scrolled > 100 ) {
-		$('nav').addClass('fix');
-		$('.logo').addClass('fix');
-		
-		$('nav').css("right",$('nav').data("width")+"px");
-		
-		
-	}   
-	if( scrolled <= 100 ) {     
-		$('nav').removeClass('fix');
-		$('.logo').removeClass('fix'); 
-	}*/
 }
