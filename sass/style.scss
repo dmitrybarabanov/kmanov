@@ -99,9 +99,7 @@ input, textarea {
 }
 
 
-#page {
-	
-}
+#page {}
 
 .main_section {
 	overflow: hidden;
@@ -960,6 +958,116 @@ footer {
 	}
 	
 }
+
+.common_header {
+	height: 222px;
+	/*background: url(../images/bg_second.jpg) no-repeat;*/
+	background: url(../images/bg_common_header.jpg) no-repeat;
+	background-position: top center;
+	width:100%;
+	overflow: hidden;
+}
+
+.common_center {
+	width:100%;
+	background:#f3f3f3 url(../images/bg_second.jpg) no-repeat;
+}
+
+.news_item {
+	display: block;
+	color: #293643;
+	position: relative;
+	@include transition(none);
+	
+	.news_item_wrapper { overflow:hidden;}
+	
+	.for_image {
+		width: 220px;
+		height: 320px;
+		float: left;
+		@include transition(all 0.2s ease-in-out);
+	}
+	
+	.img_one {
+		width: 220px;
+		height: 220px;
+		@include transition(all 0.2s ease-in-out);
+		
+		.like_td { width:220px; text-align: center;}
+	
+		
+	}
+	
+	.for_text {
+		color: #1a1e21;
+		height: 320px;
+		
+		.like_td { height: 306px; padding: 10px 10px 10px 41px;}
+
+		div.ttl {
+			font-family: 'Cam';
+			font-size: 24px;
+			line-height: 29px;
+			text-transform: uppercase;
+			padding-bottom: 15px;
+		}
+		
+		div.txt {
+			font-size: 16px;
+			line-height: 16px;
+		}
+		
+	}
+	
+}
+
+.news_item:hover {
+	background: rgba(190, 199, 207, 0.3);
+	@include transition(none);
+	
+	.for_image {
+		width: 320px;
+		height: 320px;
+		@include transition(all 0.2s ease-in-out);
+	}
+	
+	&:before {
+		content: "";
+		width: 100%;
+		height:100%;
+		box-sizing: border-box;
+		background: rgba(190, 199, 207, 0.3);
+		border-top: solid 7px #bec7cf; border-bottom: solid 7px #bec7cf;
+		position: absolute;
+		top: 0px;
+		left: -100%;
+	}
+	
+	&:after {
+		content: "";
+		width: 100%;
+		height:100%;
+		box-sizing: border-box;
+		background: rgba(190, 199, 207, 0.3);
+		border-top: solid 7px #bec7cf; border-bottom: solid 7px #bec7cf;
+		position: absolute;
+		top: 0px;
+		right: -100%;
+	}
+	
+	.for_text {
+		color: #293643;
+	}
+	
+	.img_one {margin:0px; width: 320px; height:320px; @include transition(all 0.2s ease-in-out);}
+	
+	/*
+	.img_one { display: none;}
+	.img_two { display: block; float: left;}*/
+	
+	.for_text { border-top: solid 7px #bec7cf; border-bottom: solid 7px #bec7cf;}
+}
+
 
 
 
