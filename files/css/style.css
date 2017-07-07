@@ -1149,6 +1149,49 @@ footer .beige_footer .right_info div a {
   width: 100%;
   background: #f3f3f3 url(../images/bg_second.jpg) no-repeat;
 }
+.common_center .width_wrapper {
+  color: #000000;
+  padding: 59px 0 0 0;
+}
+.common_center .width_wrapper h1 {
+  font-family: 'Cam';
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 29px;
+  text-transform: uppercase;
+}
+.common_center .width_wrapper p {
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 7px;
+}
+.common_center .width_wrapper a {
+  color: #2389e9;
+}
+.common_center .width_wrapper a:hover {
+  text-decoration: underline;
+}
+.common_center .gallery_block {
+  padding: 10px 0 111px 0;
+}
+.common_center .gallery_block a {
+  display: inline-block;
+  margin: 0 14px 14px 0;
+}
+.common_center .gallery_block img {
+  float: left;
+  height: 220px;
+}
+
+.blog_img {
+  width: 50%;
+  float: left;
+  padding: 0 32px 0 0;
+}
+
+.common_center .width_wrapper .news_item:hover {
+  text-decoration: none;
+}
 
 .news_item {
   display: block;
@@ -1260,6 +1303,18 @@ footer .beige_footer .right_info div a {
 .news_item:hover .for_text {
   border-top: solid 7px #bec7cf;
   border-bottom: solid 7px #bec7cf;
+}
+
+.inner_page .logo {
+  left: 364px;
+  top: 63px;
+}
+.inner_page .first_info {
+  margin: 39px 0 21px 0;
+}
+.inner_page .blog_slide {
+  height: 855px;
+  background: url(../images/bg_blog3.jpg) no-repeat;
 }
 
 br.clear {

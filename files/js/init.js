@@ -44,13 +44,20 @@ function _init_top_menu()
 
 function _default_init()
 {
+	var top_menu_position_hide = 100;
+	if ($("#page").hasClass("inner_page"))
+	{
+		top_menu_position_hide = 76;
+	}	
+	
+	
 	var scrolled = $(this).scrollTop();
-	if( scrolled > 100 ) {
+	if( scrolled > top_menu_position_hide ) {
 		$('.for_mobile_wrapper').addClass('fix');
 		
 		
 	}   
-	if( scrolled <= 100 ) {     
+	if( scrolled <= top_menu_position_hide ) {     
 		$('.for_mobile_wrapper').removeClass('fix'); 
 	}
 }
