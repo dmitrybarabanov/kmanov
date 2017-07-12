@@ -10,6 +10,7 @@ jQuery(document).ready(function( $ ) {
 	_init_top_menu();
 	_default_init();
 	_init_main_page_scroll();
+	_init_popup();
 
 });
 
@@ -60,4 +61,55 @@ function _default_init()
 	if( scrolled <= top_menu_position_hide ) {     
 		$('.for_mobile_wrapper').removeClass('fix'); 
 	}
+}
+
+
+function _init_popup()
+{
+	console.log("dialog");
+	$( "#dialog-addresponse" ).dialog({
+      autoOpen: false,
+	  height: 528,
+	  width: 1000,
+	  modal: true,
+	   open: function() {
+			$('.ui-widget-overlay').addClass('custom-overlay');
+		},
+		close: function() {
+			$('.ui-widget-overlay').removeClass('custom-overlay');
+		},  
+	  
+      show: {
+		effect: "blind",
+        duration: 500
+      },
+      hide: {
+        effect: "explode",
+        duration: 500
+      }	
+    });
+	
+	$(document).on("click",".write_response",function(event) {
+		event.preventDefault();
+		
+		$( "#dialog-addresponse" ).dialog("open");
+		
+	})
+	
+	$(document).on("click",".close_btn",function(event) {
+		event.preventDefault();
+		
+		$("#dialog-addresponse" ).dialog("close");
+		
+	})
+	
+	
+	
+	
+	
+	
+	//
+	//data-fancybox data-type="ajax" data-src="my_page.com/path/to/ajax/" data-filter="#two" href="javascript:;"
+	
+	
 }

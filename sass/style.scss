@@ -1139,5 +1139,64 @@ footer {
 
 br.clear{ clear: both;}
 
+.ui-widget-overlay.custom-overlay {
+	background: #000;
+	/*@include opacity(0.7);*/
+	@include opacity(1);
+}
+
+#dialog-addresponse {
+	position: relative;	
+	
+	.modal_ttl {
+		text-align: center;
+		font-family: 'Cam';
+		font-size: 24px;
+		line-height: 24px;
+		color: #f2d8a7;
+	}
+	
+	.modal_ttl_wrapper {
+		text-align: center;
+		overflow: hidden;
+		padding-top: 10px;
+		
+		.modal_ttl2 {
+			font-size: 16px;
+			line-height: 16px;
+			color: #fff;
+			padding: 0 52px;
+			display: inline-block;
+			position: relative;
+			
+			&:before {
+				content: "";
+				height: 5px;
+				width: 100%;
+				position: absolute;
+				right: 100%;
+				top: 10px;
+				background-color: #2d2e2f;
+			}
+		}
+	}
+	
+	.close_btn {
+		@include retina-sprite(close);
+		width: 34px;
+		height:34px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+}
+
+.ui-dialog-titlebar { display: none;}
+.ui-widget.ui-widget-content { background: none; border: 0px;
+
+}
+
+
+
 /*@import "320";
 @import "768";*/
