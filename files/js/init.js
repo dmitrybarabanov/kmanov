@@ -1,5 +1,6 @@
 var mobileWidth = 766;
 var is_mobile = false;
+var file_input_count = 1;
 
 jQuery(document).ready(function( $ ) {
 
@@ -11,6 +12,7 @@ jQuery(document).ready(function( $ ) {
 	_default_init();
 	_init_main_page_scroll();
 	_init_popup();
+	_init_custom_file();
 
 });
 
@@ -66,11 +68,9 @@ function _default_init()
 
 function _init_popup()
 {
-	console.log("dialog");
 	$( "#dialog-addresponse" ).dialog({
       autoOpen: false,
-	  height: 528,
-	  width: 1000,
+	  width: 1100,
 	  modal: true,
 	   open: function() {
 			$('.ui-widget-overlay').addClass('custom-overlay');
@@ -88,6 +88,7 @@ function _init_popup()
         duration: 500
       }	
     });
+
 	
 	$(document).on("click",".write_response",function(event) {
 		event.preventDefault();
@@ -106,10 +107,53 @@ function _init_popup()
 	
 	
 	
+	$('body').click(function (event) 
+	{
+	   if(!$(event.target).closest('#dialog-addresponse').length && !$(event.target).is('#dialog-addresponse')) {
+		 $("#dialog-addresponse").dialog("close");
+	   }     
+	});
+	
+	
+	
+	
+	$( "#dialog-response" ).dialog({
+      autoOpen: true,
+	  width: 1100,
+	  modal: true,
+	   open: function() {
+			$('.ui-widget-overlay').addClass('custom-overlay');
+		},
+		close: function() {
+			$('.ui-widget-overlay').removeClass('custom-overlay');
+		},  
+	  
+      show: {
+		effect: "blind",
+        duration: 500
+      },
+      hide: {
+        effect: "explode",
+        duration: 500
+      }	
+    });
+	
+	
+	
+	
+	
+	
 	
 	
 	//
 	//data-fancybox data-type="ajax" data-src="my_page.com/path/to/ajax/" data-filter="#two" href="javascript:;"
 	
+	
+}
+
+
+function _init_custom_file() {
+	
+	$('input[type=file]').customFile();
 	
 }

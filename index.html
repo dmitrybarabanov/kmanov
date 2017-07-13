@@ -21,6 +21,7 @@
 	<script src="files/js/swiper.min.js"></script>
 
 	
+	<script src="files/js/custom_files.js"></script>
 	<script src="files/js/validate.js"></script>
 	
 	<!--mmenu-->
@@ -598,13 +599,53 @@
 			<div class="modal_ttl_wrapper">
 				<div class="modal_ttl2">Заполните форму для отзыва</div>
 			</div>
-		  <p>
-			<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
-			Your files have downloaded successfully into the My Downloads folder.
-		  </p>
-		  <p>
-			Currently using <b>36% of your storage space</b>.
-		  </p>
+			
+			<div class="modal_content_wrapper">
+				<div class="padding_wrapper">
+					<div class="left_side">
+						<label for="fname">Имя*</label><br/>
+						<input type="text" class="wt req" name="fname">
+					</div>
+					<div class="right_side" id="images_container">
+					
+						
+					
+					
+						<input type="file" id="file1" name="myfile1"/>
+						<input type="file" id="file2" name="myfile2"/>
+						<input type="file" id="file3" name="myfile3"/>
+						<input type="file" id="file4" name="myfile4"/>
+						<input type="file" id="file5" name="myfile5"/>
+						<div class="add_foto_div">Добавить<br/> свое фото</div>
+						
+					
+					</div>
+					
+					<div class="center_side">
+						<label for="ftxt">Текст*</label><br/>
+						<textarea name="ftxt" class="wt req"></textarea>
+					</div>
+					
+					
+					<a href="javascript:;" class="btn_type1">Оставить отзыв</a>
+					<div class="req_info">Поля отмеченны звездочкой, обязательны к заполнению</div>
+					
+				</div>
+				 
+			</div>
+			
+		 
+		</div>
+		
+		
+		<div id="dialog-response">
+			
+			<a href="javascript:;" class="close_btn"></a>
+			<div class="response_wrapper">
+				<div class="for_dt"><span class="nm1">26.05.2017</span> <span class="nm2">Татьяна</span></div>
+				
+				
+			</div>
 		</div>
 		
 		
