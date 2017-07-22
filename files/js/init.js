@@ -118,7 +118,7 @@ function _init_popup()
 	
 	
 	$( "#dialog-response" ).dialog({
-      autoOpen: true,
+      autoOpen: false,
 	  width: 1100,
 	  modal: true,
 	   open: function() {
