@@ -101,8 +101,18 @@ function _init_popup()
 		event.preventDefault();
 		
 		$("#dialog-addresponse" ).dialog("close");
+		$("#dialog-response" ).dialog("close");
 		
 	})
+	
+	$(document).on("click",".next-resp, .prev-resp",function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		
+		$("#response_content").html("Новый текст");
+		
+	})
+	
 	
 	
 	
@@ -110,6 +120,8 @@ function _init_popup()
 	$('body').click(function (event) 
 	{
 	   if(!$(event.target).closest('#dialog-addresponse').length && !$(event.target).is('#dialog-addresponse')) {
+		  console.log("закрываем"+event.target);
+		  console.log(event);
 		 $("#dialog-addresponse").dialog("close");
 	   }     
 	});
