@@ -13,23 +13,58 @@ jQuery(document).ready(function( $ ) {
 	_init_main_page_scroll();
 	_init_popup();
 	_init_custom_file();
-
+	_sisters_init();
 });
 
+
+function _sisters_init()
+{
+	var systers_padding_top = 230; //отсуп от верха для сестер
+	var minFirst_section_height = 530; //минимальная высота сестер
+	var women_height = 810; //высота тетки в конце первого слайда
+	
+	// Home
+	if (is_mobile==false)
+	{
+		var h = $(window).height();
+		
+		var sisHeight =  h-systers_padding_top;
+		
+		if (sisHeight<minFirst_section_height)
+			sisHeight = minFirst_section_height;
+		
+		$(".sisters").css("height", sisHeight+"px");
+		
+	
+		$(".main_section").css("height", (systers_padding_top+sisHeight+women_height)+"px");
+		
+		$(".first_slide").css("height", (systers_padding_top+sisHeight+200)+"px");
+		
+		
+	}
+	
+	
+}
 
 function _init_main_page_scroll()
 {
 	// Home
 	if (is_mobile==false)
 	{
+		
+		var h = ($(window).height()/4)-100;
+		
 		var parallaxBlock = $('.about_k'),
 			//amp = 0.3;
-			amp = 0.33;
+			amp = 0.43;
 		if(parallaxBlock.length) {
 			$(document).on('scroll', function() {
 				var scrollTop = $(window).scrollTop(),
 					dist = parseInt(scrollTop * amp);
-
+					
+				if (dist>h)
+					dist=h;
+				
 				parallaxBlock.css('transform', 'translateY(-'+ dist +'px)');
 			});
 		}

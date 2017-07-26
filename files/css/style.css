@@ -187,10 +187,23 @@ input, textarea {
 
 .main_section {
   overflow: hidden;
-  background: url(../images/bg_main2.jpg) no-repeat;
+  background: url(../images/bg_main21.jpg) no-repeat;
+  background-position: bottom center;
+}
+
+.sisters {
+  width: 100%;
+  position: absolute;
+  top: 230px;
+  left: 0px;
+  z-index: 6;
+  height: 600px;
+  background: url(../images/bg_3sisters2.png) no-repeat;
+  background-size: auto 100%;
   background-position: top center;
 }
 
+/*bg_3sisters*/
 .width_wrapper {
   width: 1180px;
   display: block;
@@ -198,7 +211,8 @@ input, textarea {
 }
 
 .first_slide {
-  height: 1235px;
+  /*height: 1235px;*/
+  height: 1097px;
   position: relative;
 }
 
@@ -252,6 +266,7 @@ input, textarea {
   float: right;
   color: #fff;
   margin: 63px 0 21px 0;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
 
 a:hover {
@@ -349,7 +364,7 @@ nav ul:after {
   display: none;
 }
 .for_mobile_wrapper.fix nav ul {
-  background-color: #22261d;
+  /*background-color:#22261d;*/
 }
 .for_mobile_wrapper.fix nav:before {
   content: "";
@@ -367,6 +382,7 @@ nav ul:after {
   height: 303px;
   width: 100%;
   position: absolute;
+  z-index: 10;
   bottom: 0px;
   left: 0px;
 }
@@ -775,6 +791,7 @@ p.dot:before {
 }
 
 h2.subttl {
+  text-shadow: 0px 0px 2px rgba(242, 216, 167, 0.5);
   margin: 0 auto;
   color: #f2d8a7;
   text-align: center;
@@ -861,7 +878,6 @@ a.btn1:hover {
   }
 }
 .swiper_padding_wrapper.for_foto .swiper-button-next, .swiper_padding_wrapper.for_foto .swiper-button-prev {
-  background-size: auto;
   margin-top: -34px;
 }
 
@@ -915,6 +931,7 @@ bg_blog
 .blog_slide .blog_width_wrapper h2 {
   color: #f9dfae;
   margin: 49px 0 45px 0;
+  text-shadow: 0px 0px 2px rgba(242, 216, 167, 0.5);
 }
 .blog_slide .swiper_padding_wrapper.for_blog {
   margin: 0 auto;
@@ -1024,6 +1041,7 @@ footer .hspacer {
   overflow: hidden;
 }
 footer .hspacer.record {
+  text-shadow: 0px 0px 2px rgba(242, 216, 167, 0.5);
   color: #f2d8a7;
   font-weight: bold;
   line-height: 22px;
@@ -1032,6 +1050,7 @@ footer .hspacer.record .p_top {
   padding: 77px 0 0 0;
 }
 footer .hspacer.social {
+  text-shadow: 0px 0px 2px rgba(242, 216, 167, 0.5);
   color: #f2d8a7;
 }
 footer .hspacer.social .p_top {

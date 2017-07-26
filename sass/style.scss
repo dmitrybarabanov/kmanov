@@ -123,10 +123,26 @@ input, textarea {
 .main_section {
 	overflow: hidden;
 	
-	background: url(../images/bg_main2.jpg) no-repeat;
-	background-position: top center;
+	background: url(../images/bg_main21.jpg) no-repeat;
+	background-position: bottom center;
 }
 
+.sisters {
+
+	width: 100%;
+	position: absolute;
+	top: 230px;
+	left: 0px;
+	z-index: 6;
+	height: 600px;
+	
+	background: url(../images/bg_3sisters2.png)  no-repeat;
+	background-size: auto 100%;
+	background-position: top center;
+	
+}
+
+/*bg_3sisters*/
 
 .width_wrapper {
 	width: 1180px;
@@ -136,7 +152,10 @@ input, textarea {
 }
 
 .first_slide {
-	height: 1235px;
+	/*height: 1235px;*/
+	
+	    height: 1097px;
+	
 	position: relative;	
 }
 
@@ -171,6 +190,7 @@ input, textarea {
 	float: right;
 	color: #fff;
 	margin: 63px 0 21px 0;
+	@include shadow_white;
 }
 
 a:hover {
@@ -252,7 +272,7 @@ nav {
 	nav { 
 		
 		ul { 
-			background-color:#22261d;
+			/*background-color:#22261d;*/
 		}
 		
 		
@@ -275,6 +295,7 @@ nav {
 	height: 303px;
 	width: 100%;
 	position: absolute;
+	z-index: 10;
 	bottom: 0px;
 	left: 0px;
 	
@@ -688,6 +709,7 @@ p.dot {
 
 h2.subttl {
 	
+	@include shadow_beidge;
 	span { font-size: 24px; position: relative;
 		a.btn1 {
 			position: absolute;
@@ -735,7 +757,7 @@ a.btn1 {
 		width: 36px;
 		height: 64px;
 		right: -59px;
-		@include retina-sprite(next);
+		@include retina-sprite(next); 
 	}
 
 	.swiper-button-prev {
@@ -746,7 +768,6 @@ a.btn1 {
 	}
 	
 	.swiper-button-next, .swiper-button-prev {
-		background-size: auto;
 		margin-top: -34px;
 	}
 	
@@ -811,6 +832,7 @@ bg_blog
 		h2 {
 			color:#f9dfae;
 			margin: 49px 0 45px 0;
+			@include shadow_beidge;
 		}
 		
 	}
@@ -924,6 +946,7 @@ footer {
 	}
 	
 	.hspacer.record {
+		@include shadow_beidge;
 		color:#f2d8a7;
 		font-weight: bold;
 		line-height: 22px;
@@ -932,6 +955,7 @@ footer {
 	
 	.hspacer.social
 	{
+		@include shadow_beidge;
 		color:#f2d8a7;
 		
 		.p_top {padding: 72px 0 0 0;}
@@ -1161,7 +1185,9 @@ footer {
 
 .inner_page {
 	.logo { left: 364px; top: 63px;}
-	.first_info {margin: 39px 0 21px 0;}
+	.first_info {margin: 39px 0 21px 0;
+	
+	}
 	
 	.blog_slide
 	{
