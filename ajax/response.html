@@ -1,1 +1,98 @@
-response
+<div class="swiper_padding_wrapper">
+						<div class="left_blur_image">
+							<img src="files/images/content/g1.jpg">
+						</div>
+						<div class="right_blur_image">
+							<img src="files/images/content/g1.jpg">
+						</div>
+						<div class="swiper-container gallery-top">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" data-num="0" style="background-image:url(files/images/content/g1.jpg)">
+									<div class="top_ball"><a href="#" class="more">ПОДРОБНЕЕ</a>
+										<div class="like_tbl">
+											<div class="like_td">
+											Операция в два этапа:<br/>
+											увеличение и коррекция груди, вторым этапом был установлен имплант 350мл.<br/>
+											проведена корреляция ореол
+											<a href="#" class="close_more"></a>
+											</div>
+										</div>
+									</div>
+								
+								</div>
+								<div class="swiper-slide" data-num="1" style="background-image:url(files/images/content/g_2.jpg)"></div>
+								<div class="swiper-slide" data-num="2" style="background-image:url(files/images/content/g_3.jpg)"></div>
+								<div class="swiper-slide" data-num="3" style="background-image:url(files/images/content/g_4.jpg)"></div>
+							</div>
+						</div>
+						
+						<div class="swiper-button-next gallery"></div>
+						<div class="swiper-button-prev gallery"></div>
+						
+						<div class="swiper_padding_wrapper2">
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image:url(files/images/content/g1.jpg)"></div>
+									<div class="swiper-slide" style="background-image:url(files/images/content/g_2.jpg)"></div>
+									<div class="swiper-slide" style="background-image:url(files/images/content/g_3.jpg)"></div>
+									<div class="swiper-slide" style="background-image:url(files/images/content/g_4.jpg)"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+<script>
+				g_count = 4;
+				images = ["files/images/content/g1.jpg", "files/images/content/g_2.jpg", "files/images/content/g_3.jpg",  "files/images/content/g_4.jpg"];
+			
+				var galleryTop = new Swiper('.gallery-top', {
+					nextButton: '.gallery.swiper-button-next',
+					prevButton: '.gallery.swiper-button-prev',
+					spaceBetween: 4,
+					loopedSlides: 4,
+					loop: true,
+					onSlideChangeEnd: function (swiper) {
+					
+						//console.log($(".gallery-top .swiper-slide-active").data("num")-1);
+					
+						ChangeLeftImage($(".gallery-top .swiper-slide-active").data("num"));
+						ChangeRightImage($(".gallery-top .swiper-slide-active").data("num"));
+						
+						
+					}
+				},
+					
+				);
+				var galleryThumbs = new Swiper('.gallery-thumbs', {
+					spaceBetween: 4,
+					centeredSlides: false,
+					/*centeredSlides: true,
+					slidesPerView: 'auto',*/
+					slidesPerView: 4,
+					touchRatio: 0.2,
+					slideToClickedSlide: true,
+					loopedSlides: 4,
+					loop: true
+					
+				});
+				galleryTop.params.control = galleryThumbs;
+				galleryThumbs.params.control = galleryTop;
+				
+				/*
+				function ChangeLeftImage(index)
+				{
+					var left_index = (index-1+g_count)%g_count;
+					console.log("left-index "+left_index);
+					$(".left_blur_image img").attr("src", images[left_index]);
+				}
+				
+				function ChangeRightImage(index)
+				{
+					var left_index = (index+1+g_count)%g_count;
+					console.log("right-index "+left_index);
+					$(".right_blur_image img").attr("src", images[left_index]);
+				}
+				*/
+				//galleryTop.slideTo(2, 0, false);
+				
+				</script>

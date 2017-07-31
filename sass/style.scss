@@ -1,5 +1,6 @@
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/css3/border-radius";
 @import "fonts";
 
 $icons-sprite-dimensions: true;
@@ -466,15 +467,20 @@ p.dot {
 	}
 	
 	.foto_menu2 {
-		overflow: hidden;
+		
+		text-align: center;
 		padding: 65px 0 46px 0;
-		.item {width:230px;  float: left;}
+		.item {width:auto; /*230px;*/  display: inline-block; margin: 0 45px;
+			text-align: left;
+			vertical-align: top;
+			text-transform: uppercase;
+			height: 38px;
+		}
 		
 		.item.first 
 		{
-			width: 302px;
-			margin-right: 130px;
-			text-align: right;
+			width: auto;
+			/*text-align: right;*/
 		}
 		
 		a { @include font16;
@@ -615,19 +621,35 @@ p.dot {
 	position: absolute;
 	left: 0px;
 	top: -197px;
-	.about_foto {
+	
+	.about_foto2 {
 		height: 754px;
 		width: 1000px;
 		position:absolute;
+		z-index: 6;
 		left: 672px;
 		
 		background: url(../images/bg_kahram.png) no-repeat;
 		background-position: top left;
+	}
+	
+	.about_foto {
+		height: 754px;
+		width: 1000px;
+		position:absolute;
+		z-index: 5;
+		left: 672px;
+		
+		background: url(../images/bg_kahram_0.png) no-repeat;
+		background-position: top left;
 		
 		
-		.info {
+	}
+	
+	.info {
 			background: rgba(41,54,67, 0.9);
 			position: absolute;
+			z-index:10;
 			left: -11px;
 			bottom: 74px;
 			color: #dec79b;
@@ -639,8 +661,6 @@ p.dot {
 				display:inline-block;
 			}
 		}
-		
-	}
 }
 	
 .about_slide {
@@ -674,6 +694,11 @@ p.dot {
 		
 		.about_text_wrapper {
 			padding: 68px 0 0 36px;
+			display: none;
+			
+			&.selected {
+				display: block;
+			}
 		}
 		
 		h2 {
@@ -773,10 +798,40 @@ a.btn1 {
 	
 }
 
+
+.swiper-container.diplom-foto{
+	width: 100%;
+    height: 205px; /*244*/
+	z-index:10;
+	
+	.swiper-slide {
+	    text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: auto;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+	}
+	
+}
+
+
 	.swiper-container.gallery-foto {
         width: 100%;
         height: 244px;
         margin: 0px auto;
+		z-index: 10;
 		
 		
 		 .swiper-slide {
@@ -1521,6 +1576,82 @@ textarea.wt { padding: 14px;}
 		@include retina-sprite(prev);
 	}
 
+	
+.gallery-top .swiper-slide { position: relative;}
+.top_ball {
+	position: absolute;
+	width: 102px;
+	height: 102px;
+	left: 36px;
+	top: 40px;
+	@include retina-sprite(ball);
+	.like_tbl { display: none;}
+	
+	a.more {
+		width: 102px;
+		display: inline-block;
+		color: #fff;
+		font-family: 'Cam';
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 14px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 42px;
+	}
+	
+}
+
+.top_ball:hover {
+	background: rgba(235,204,160, 0.8);
+	a.more {color: #293643;}
+	@include border-radius(51px);
+}
+
+.top_ball.active {
+	@include transition(all 0.5s ease-in-out);
+	
+	width: 90%;
+	background: rgba(235,204,160, 0.8);
+	 @include border-radius(51px);
+	
+	a.more { display: none;}
+	
+	
+	.like_tbl.active { display: table; }
+	
+	.like_tbl {
+		width: 100%;
+		
+		.like_td{
+			padding: 0 100px 0 58px;
+			text-transform: uppercase;
+			font-family: 'Cam';
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 17px;
+			color: #293643;
+			
+			position: relative;
+			
+			a.close_more{
+				@include retina-sprite(close_more);
+				width: 24px;
+				height: 24px;
+				position: absolute;
+				top: 40px;
+				right: 40px;
+			}
+			
+		}
+		
+	}
+	
+	
+}
+
+.opacityNone { @include opacity(0); z-index: 9;}
+.opacityBlock{ @include opacity(1); z-index: 10;}
 
 /*@import "320";
 @import "768";*/

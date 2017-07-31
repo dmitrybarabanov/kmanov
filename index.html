@@ -145,26 +145,71 @@
 					<div class="foto_menu">
 						<h2>ФОТО ОПЕРАЦИЙ:</h2>
 						
-						<div class="fitem selected"><a href="javascript:;">ГРУДЬ</a></div>
+						<div class="fitem selected"><a class="foto_top_menu" data-submenu="for_menu1" href="javascript:;">ГРУДЬ</a></div>
 						<div class="fitem empty">...............</div>
-						<div class="fitem"><a href="javascript:;">ЛИЦО</a></div>
+						<div class="fitem"><a class="foto_top_menu" data-submenu="for_menu2" href="javascript:;">ЛИЦО</a></div>
 						<div class="fitem empty">...............</div>
-						<div class="fitem"><a href="javascript:;">ТЕЛО</a></div>
+						<div class="fitem"><a class="foto_top_menu" data-submenu="for_menu3" href="javascript:;">ТЕЛО</a></div>
 						
 					</div>
 					<div class="foto_menu2">
-						<div id="for_menu1" style="display: block">
-							<div class="item first"><a href="javascript:;">УВЕЛИЧЕНИЕ<br/> ГРУДИ</a></div>
-							<div class="item"><a href="javascript:;" class="selected">УМЕНЬШЕНИЕ<br/> ГРУДИ</a></div>
-							<div class="item"><a href="javascript:;">ПОДТЯЖКА<br/> ГРУДИ</a></div>
-							<div class="item"><a href="javascript:;">ВОССТАНОВЛЕНИЕ<br/> ГРУДИ</a></div>
+						<div id="for_menu1" class="foto_submenu" style="display: block">
+							<div class="item first"><a href="javascript:;" class="selected" data-galleryid="1">УВЕЛИЧЕНИЕ<br/> ГРУДИ</a></div>
+							<div class="item"><a href="javascript:;" data-galleryid="2">УМЕНЬШЕНИЕ<br/> ГРУДИ</a></div>
+							<div class="item"><a href="javascript:;" data-galleryid="3">ПОДТЯЖКА<br/> ГРУДИ</a></div>
+							<div class="item"><a href="javascript:;" data-galleryid="4">ВОССТАНОВЛЕНИЕ<br/> ГРУДИ</a></div>
 						</div>
+						
+						<div id="for_menu2" class="foto_submenu" style="display: none">
+							<div class="item first"><a href="javascript:;">Пластика<br/> век</a></div>
+							<div class="item"><a href="javascript:;">Подтяжка<br/> лица</a></div>
+							<div class="item"><a href="javascript:;">Оттопластика</a></div>
+						</div>
+						
+						<div id="for_menu3" class="foto_submenu" style="display: none">
+							<div class="item first"><a href="javascript:;">Абдоминопластика</a></div>
+							<div class="item"><a href="javascript:;">Липосакция</a></div>
+							<div class="item"><a href="javascript:;">Липофилинг</a></div>
+						</div>
+						
 					</div>
 				</div>
 			</div>
+			
+			
+			
+			
+			
+			
+			<script>
+				var g_count = 5;
+				var images = ["files/images/content/g1.jpg", "files/images/content/g_2.jpg", "files/images/content/g_3.jpg", "files/images/content/g_4.jpg",  "files/images/content/g_5.jpg"];
+				
+				function ChangeLeftImage(index)
+				{
+					var left_index = (index-1+g_count)%g_count;
+					var right_index = (index+1+g_count)%g_count;
+					console.log("left-index="+left_index+" index="+index+" right_index="+right_index);
+					
+					$(".left_blur_image img").attr("src", images[left_index]);
+				}
+				
+				function ChangeRightImage(index)
+				{
+					var right_index = (index+1+g_count)%g_count;
+					var left_index = (index+1+g_count)%g_count;
+					$(".right_blur_image img").attr("src", images[left_index]);
+				}
+			</script>
+	
+			
+			
+			
+			
 				
 			<div class="left_right_wrapper">
-				<div class="width_wrapper">	
+				<div class="width_wrapper" id="fotoLoader">	
+					
 					<div class="swiper_padding_wrapper">
 						<div class="left_blur_image">
 							<img src="files/images/content/g1.jpg">
@@ -174,7 +219,19 @@
 						</div>
 						<div class="swiper-container gallery-top">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide" data-num="0" style="background-image:url(files/images/content/g1.jpg)"></div>
+								<div class="swiper-slide" data-num="0" style="background-image:url(files/images/content/g1.jpg)">
+								
+									<div class="top_ball"><a href="#" class="more">ПОДРОБНЕЕ</a>
+										<div class="like_tbl">
+											<div class="like_td">
+											Операция в два этапа:<br/>
+											увеличение и коррекция груди, вторым этапом был установлен имплант 350мл.<br/>
+											проведена корреляция ореол
+											<a href="#" class="close_more"></a>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="swiper-slide" data-num="1" style="background-image:url(files/images/content/g_2.jpg)"></div>
 								<div class="swiper-slide" data-num="2" style="background-image:url(files/images/content/g_3.jpg)"></div>
 								<div class="swiper-slide" data-num="3" style="background-image:url(files/images/content/g_4.jpg)"></div>
@@ -197,15 +254,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-				
-				<script>
-				var g_count = 5;
-				var images = ["files/images/content/g1.jpg", "files/images/content/g_2.jpg", "files/images/content/g_3.jpg", "files/images/content/g_4.jpg",  "files/images/content/g_5.jpg"];
-
-				
-				
+					
+					
+					<script>
+			
 				var galleryTop = new Swiper('.gallery-top', {
 					nextButton: '.gallery.swiper-button-next',
 					prevButton: '.gallery.swiper-button-prev',
@@ -239,16 +291,11 @@
 				galleryTop.params.control = galleryThumbs;
 				galleryThumbs.params.control = galleryTop;
 				
-				
+				/*
 				function ChangeLeftImage(index)
 				{
 					var left_index = (index-1+g_count)%g_count;
-					
-					//$(".left_blur_image img").attr("src", images[left_index]);
-					
-					//
 					$(".left_blur_image img").attr("src", images[left_index]);
-					
 				}
 				
 				function ChangeRightImage(index)
@@ -257,11 +304,16 @@
 					
 					$(".right_blur_image img").attr("src", images[left_index]);
 				}
-				
+				*/
 				//galleryTop.slideTo(2, 0, false);
 				
 				</script>
-	
+					
+					
+				</div>
+			</div>
+				
+				
 		</div>
 		
 		
@@ -269,16 +321,72 @@
 			<div class="width_wrapper">	
 				<div class="about_menu">
 				
-						<div class="fitem selected"><a href="javascript:;">О ХИРУРГЕ</a></div>
+						<div class="fitem selected"><a href="javascript:;" data-aboutid="about1" data-num="1">О ХИРУРГЕ</a></div>
 						<div class="fitem empty">...............</div>
-						<div class="fitem"><a href="javascript:;">ОБРАЗОВАНИЕ</a></div>
+						<div class="fitem"><a href="javascript:;"  data-aboutid="about2" data-num="2">ОБРАЗОВАНИЕ</a></div>
 						<div class="fitem empty">...............</div>
-						<div class="fitem"><a href="javascript:;">ГАРАНТИИ</a></div>
+						<div class="fitem"><a href="javascript:;"  data-aboutid="about3" data-num="3">ГАРАНТИИ</a></div>
 				</div>
 				
 				<div class="about_text">
-					<div class="about_text_wrapper">
+					<div class="about_text_wrapper selected" id="about1">
 						<h2>ЭЛЬДАР БЕГРАЛОВИЧ КАХРАМАНОВ</H2>
+						<span>пластический хирург</span>
+						<p class="dot">
+							Первый в России сертифицированный специалист по инновационному увеличению груди по методике ведущего европейского хирурга, президента
+							ассоциации пластицеских хирургов Швеции Уэльфа Самуэльссона.
+						</p>
+						
+						<p class="dot">
+							Член Ассоциации пластичесих хирургов  Общества пластической реконструктивной эстетической хирургии (ОПРЭХ).
+						</p>
+						
+						<p class="dot">
+							Автор уникальных методик при операции увеличения груди: сохраность функций молочных желез, невидимые швы, восстановление формы груди при самых различных аномалиях и деформациях.
+						</p>
+						
+						<p class="dot">
+							Признан одним из лучших пластических хирургов в области хирургии груди в России независимым рейтингом пациентов.
+						</p>
+						<p class="dot">
+							Является обладателем многократных премий и наград, как лучший пластический хирург в пластике молочных желез.
+						</p>
+						
+						<div class="attention">ПОСЕТИТЕЛЯМИ НЕЗАВИСИМОГО РЕЙТИНГА ПЛАСТИЧЕСКИХ ХИРУРГОВ, КАХРАМАНОВ ЭЛЬДАР БЫЛ ПРИЗНАН ЛУЧШИМ ПЛАСТИЧЕСКИМ ХИРУРГОМ ПО УВЕЛИЧЕНИЮ ГРУДИ с 2014 по 2016 года!
+						
+						</div>
+					</div>
+					
+					<div class="about_text_wrapper" id="about2">
+						<h2>ЭЛЬДАР БЕГРАЛОВИЧ КАХРАМАНОВ 2</H2>
+						<span>пластический хирург</span>
+						<p class="dot">
+							Первый в России сертифицированный специалист по инновационному увеличению груди по методике ведущего европейского хирурга, президента
+							ассоциации пластицеских хирургов Швеции Уэльфа Самуэльссона.
+						</p>
+						
+						<p class="dot">
+							Член Ассоциации пластичесих хирургов  Общества пластической реконструктивной эстетической хирургии (ОПРЭХ).
+						</p>
+						
+						<p class="dot">
+							Автор уникальных методик при операции увеличения груди: сохраность функций молочных желез, невидимые швы, восстановление формы груди при самых различных аномалиях и деформациях.
+						</p>
+						
+						<p class="dot">
+							Признан одним из лучших пластических хирургов в области хирургии груди в России независимым рейтингом пациентов.
+						</p>
+						<p class="dot">
+							Является обладателем многократных премий и наград, как лучший пластический хирург в пластике молочных желез.
+						</p>
+						
+						<div class="attention">ПОСЕТИТЕЛЯМИ НЕЗАВИСИМОГО РЕЙТИНГА ПЛАСТИЧЕСКИХ ХИРУРГОВ, КАХРАМАНОВ ЭЛЬДАР БЫЛ ПРИЗНАН ЛУЧШИМ ПЛАСТИЧЕСКИМ ХИРУРГОМ ПО УВЕЛИЧЕНИЮ ГРУДИ с 2014 по 2016 года!
+						
+						</div>
+					</div>
+					
+					<div class="about_text_wrapper" id="about3">
+						<h2>ЭЛЬДАР БЕГРАЛОВИЧ КАХРАМАНОВ 3</H2>
 						<span>пластический хирург</span>
 						<p class="dot">
 							Первый в России сертифицированный специалист по инновационному увеличению груди по методике ведущего европейского хирурга, президента
@@ -324,7 +432,6 @@
 					<div class="swiper-button-next foto"></div>
 					<div class="swiper-button-prev foto"></div>
 				</div>
-				
 				<script>
 				var galleryFoto = new Swiper('#gallery-foto', {
 					nextButton: '.foto.swiper-button-next',
@@ -337,6 +444,49 @@
 				
 				galleryFoto.slideTo(2, 0, false);
 				</script>
+				
+				
+				
+				<div class="swiper_padding_wrapper for_foto" id="diplom-slider" style="display: none;">
+					<div class="swiper-container diplom-foto" id="diplom-foto">
+						<div class="swiper-wrapper">
+								<div class="swiper-slide"><a href="files/images/diplom.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom2.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom2.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom3.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom3.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom2.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom2.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom3.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom3.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom3.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom3.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom3.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom3.png"></a></div>
+								<div class="swiper-slide"><a href="files/images/diplom.png" data-fancybox="diploms" data-caption="My caption"><img src="files/images/diplom.png"></a></div>
+							
+						</div>
+					</div>
+					
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				
+				<script>
+				/*
+				var diplomSlider = new Swiper('#diplom-foto', {
+					nextButton: '#diplom-slider .swiper-button-next',
+					prevButton: '#diplom-slider .swiper-button-prev',
+					slidesPerView: 'auto',
+					loop: true,
+					spaceBetween: 31,
+					centeredSlides: true,
+					paginationClickable: true
+				});
+				
+				diplomSlider.slideTo(2, 0, false);*/
+				</script>
+				
+				
+				
+				
 				
 				
 				<h2 class="subttl"><span>ЭЛЬДАР КАХРАМАНОВ</span> ОТЗЫВЫ ПАЦИЕНТОВ <span><a class="btn1 write_response" href="javascript:;">НАПИСАТЬ ОТЗЫВ</a></span></h2>
@@ -381,14 +531,15 @@
 			
 			<div class="about_slide2">
 				<div class="width_wrapper">	
-					<div class="about_foto">
+					<div class="about_foto2" id="about_foto2">
 						<div class="info">
 							Победитель  профессионального конкурса<br/><br/>
 							<b>&laquo;ЛУЧШИЙ ПЛАСТИЧЕСКИЙ ХИРУРГ<br/>
 							ПО УВЕЛИЧЕНИЮ ГРУДИ&raquo;</b><br/><br/>
 							издательство &laquo;Красота и здоровье&raquo;
-							
 						</div>
+					</div>
+					<div class="about_foto">
 					</div>
 				</div>
 			</div>

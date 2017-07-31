@@ -14,8 +14,156 @@ jQuery(document).ready(function( $ ) {
 	_init_popup();
 	_init_custom_file();
 	_sisters_init();
+	
+	_image_dopinfo_init();
+	_foto_menu();
+	
 });
 
+function _foto_menu() {
+	
+	//foto_top_menu
+	
+	$(document).on("click",".foto_top_menu",function(event) {
+		event.preventDefault();
+		
+				
+		var submenu_id = $(this).data("submenu");
+		
+		$(".foto_menu .fitem").removeClass("selected");
+		$(this).parent().addClass("selected");
+		
+		$(".foto_submenu").css("display", "none");
+		$("#"+submenu_id).css("display", "block");
+		
+		
+	});
+	
+	
+	//gallery
+	$(document).on("click",".foto_submenu .item a",function(event) {
+		event.preventDefault();
+		
+				
+		var gallery_id = $(this).data("galleryid");
+	
+		$(".foto_submenu .item a").removeClass("selected");
+		$(this).addClass("selected");
+		
+		$( "#fotoLoader" ).load( "ajax/response.html" );
+		
+		
+	});
+	
+	var diplomSliderIsInit = 0;
+	
+	$(document).on("click",".about_menu .fitem a",function(event) {
+		event.preventDefault();
+		
+		$(".about_menu .fitem").removeClass("selected");
+		$(this).parent().addClass("selected");
+		
+		
+		var about_id = $(this).data("aboutid");
+		
+		
+		$(".about_text_wrapper").removeClass("selected");
+		$("#"+about_id).addClass("selected");
+		
+		var num = $(this).data("num");
+		
+		if (num==1){
+			$("#about_foto2").css("background-image", "url(files/images/bg_kahram.png)");
+			//$("#foto-slider").addClass("opacityBlock").removeClass("opacityNone");
+			//$("#diplom-slider").addClass("opacityNone").removeClass("opacityBlock");
+			$("#foto-slider").css("display", "block");
+			$("#diplom-slider").css("display", "none");
+			
+			
+		}
+		else if (num==2)
+		{
+			$("#about_foto2").css("background-image", "url(files/images/bg_kahram2.png)");
+			//$("#foto-slider").addClass("opacityNone").removeClass("opacityBlock");
+			//$("#diplom-slider").addClass("opacityBlock").removeClass("opacityNone");
+			
+			$("#foto-slider").css("display", "none");
+			$("#diplom-slider").css("display", "block");
+			
+			if (diplomSliderIsInit==0)
+			{
+				_init_diplom_slider();
+				diplomSliderIsInit=1;
+			}
+			
+		}
+		else if (num==3)
+		{
+			$("#about_foto2").css("background-image", "url(files/images/bg_kahram3.png)");
+			//$("#foto-slider").addClass("opacityNone").removeClass("opacityBlock");
+			//$("#diplom-slider").addClass("opacityBlock").removeClass("opacityNone");
+			$("#foto-slider").css("display", "none");
+			$("#diplom-slider").css("display", "block");
+			
+			if (diplomSliderIsInit==0)
+			{
+				_init_diplom_slider();
+				diplomSliderIsInit=1;
+			}
+			
+		}
+		
+		
+		/*
+		
+		
+		
+		
+		
+		*/
+	});
+	
+}
+
+function _init_diplom_slider()
+{
+	var diplomSlider = new Swiper('#diplom-foto', {
+					nextButton: '#diplom-slider .swiper-button-next',
+					prevButton: '#diplom-slider .swiper-button-prev',
+					slidesPerView: 'auto',
+					loop: true,
+					spaceBetween: 31,
+					centeredSlides: true,
+					paginationClickable: true
+				});
+				
+				diplomSlider.slideTo(2, 0, false);
+}
+
+function _image_dopinfo_init()
+{
+	
+	$(document).on("click",".close_more",function(event) {
+		event.preventDefault();
+		
+		$(this).closest(".top_ball.active").removeClass("active");
+		$(this).closest(".like_tbl.active").removeClass("active");
+		
+	});
+	
+	$(document).on("click",".more",function(event) {
+		event.preventDefault();
+		
+		$(this).closest(".top_ball").addClass("active");
+		var tbl = $(this).next();
+		
+		setTimeout(function(){
+			$(tbl).addClass("active");
+		}, 500);
+		
+	});
+	
+}
 
 function _sisters_init()
 {
@@ -155,8 +303,8 @@ function _init_popup()
 	$('body').click(function (event) 
 	{
 	   if(!$(event.target).closest('#dialog-addresponse').length && !$(event.target).is('#dialog-addresponse')) {
-		  console.log("закрываем"+event.target);
-		  console.log(event);
+	//	  console.log("закрываем"+event.target);
+		//  console.log(event);
 		 $("#dialog-addresponse").dialog("close");
 	   }     
 	});
