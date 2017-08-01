@@ -18,7 +18,22 @@ jQuery(document).ready(function( $ ) {
 	_image_dopinfo_init();
 	_foto_menu();
 	
+	_init_anchor_going();
+	_init_mobile_menu();
+	
 });
+
+function _init_anchor_going()
+{
+	$("body").on('click', '[href*="#"]', function(e){
+		var fixed_offset = 100;
+		if ($(this.hash).length) {
+			$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+			e.preventDefault();
+		}
+	});
+	
+}
 
 function _foto_menu() {
 	
@@ -351,4 +366,45 @@ function _init_custom_file() {
 	
 	$('input[type=file]').customFile();
 	
+}
+
+function _init_mobile_menu()
+{
+	if (is_mobile)
+	{
+		var menu = '<h3 class="mobile_info"><span>Запись на бесплатную консультацию:</span><br/>+7 906 090  99 22</h3>';
+
+		menu += $("#desktop-menu").html();
+
+		console.log(menu);
+
+		$("#mobile-menu ul").append(menu);
+
+		API = $("#mobile-menu").mmenu({
+			navbar 		: false,
+			slidingSubmenus: false
+			// options
+		}, {
+			// configuration
+			offCanvas: {
+				pageNodetype: "div#page",
+				menuInjectMethod: "append",
+				hardwareAcceleration: false
+			},
+			clone: false
+		});
+		
+		
+		$(".foto_menu2 .item a").each(
+			function(){
+				
+				var txt = $.trim($(this).text());
+				txt = txt.replace("<br/>", " ");
+				
+				$(this).text(txt);
+			}
+		);
+		
+		
+	}
 }

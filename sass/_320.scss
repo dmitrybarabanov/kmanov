@@ -1,0 +1,418 @@
+$icons-sprite-dimensions: true;
+@import "retina";
+
+@media screen and (max-width: 767px) {
+	
+	
+	h2 { 
+		font-size: 23px;
+		line-height: 23px;
+	}
+	
+	
+	
+	.for_mobile_wrapper {display: none;}
+	
+	.width_wrapper  { width:100%;}
+	
+	.mobile_header {
+		z-index: 199; 
+		width:100%;
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 64px;
+		background-color:#1d2226;
+		
+		.width_wrapper { position: relative; overflow: visible; width:100%;}
+		
+	}
+	
+	#for_mobile_menu {
+		width: 64px;
+		height: 64px;
+		float: left;
+		@include retina-sprite(mmenu);
+	}
+	
+	.m_logo{
+		width: 110px;
+		height: 38px;
+		@include retina-sprite(logom);
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		margin-left: -55px;
+	}
+	
+	.mobile_info {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		line-height: 18px;
+		padding: 0 10px;
+		color: #fff;
+		margin: 10px 0 10px 0;
+		@include shadow_white;
+		
+		span {
+			font-size: 13px;
+			display: inline-block;
+			padding: 4px 0 4px 0;
+		}
+	}
+
+	ul.mm-listview.mm-vertical li.sep 
+	{	
+		display: none;
+	}
+	
+	
+	footer {
+		.blue {
+			height: auto;
+			padding-bottom: 15px;
+		}
+		
+		.col1  {
+			display: none;
+		}
+		
+		.col2, .col3  {
+			width: auto;
+			padding: 0 10px;
+			line-height: 16px;
+			font-size: 14px;
+			float: none;
+		}
+		
+		.hspacer.record {
+			height: auto;
+			line-height: 14px;
+			font-size: 14px;
+			
+			.p_top {
+				padding: 15px 0 15px 0;
+			}
+		}
+		
+		.col3 {
+			.hspacer { height: auto;}
+			
+			.hspacer.social {
+				.p_top {
+					padding: 15px 0 5px 0;
+				}
+			}
+		}
+		
+		.beige_footer {
+			height: auto;
+			padding: 0 10px;
+			
+			.left_info, .right_info { width: 100%; float: none;}
+			
+			.left_info { padding: 10px 0 10px 0; font-size: 14px;}
+			.right_info {  padding: 12px 0 20px 0;
+				text-align: left;
+				div { font-size: 14px;}
+			}
+			
+		}
+		
+		a.soc {
+			margin: 5px 10px 0 0;
+		}
+		
+	}
+	
+	
+	.sisters {
+		width: 100%;
+		position: absolute;
+		top: 67px;
+		height: 400px;
+	}
+	
+	.first_slide {
+    /* height: 1235px; */
+		height: 900px;
+	}
+	
+	.about_k {
+		background: none;
+		padding: 0 10px;
+		background: rgba(41,54,67, 0.9);
+		height: auto;
+		
+		.left_info {
+			float: none;
+			width: 100%;
+			padding-top: 20px;
+			overflow: hidden;
+			padding-bottom: 20px;
+			
+			h1 {
+				font-size: 25px;
+				line-height: 28px;
+				padding-bottom: 20px;
+			}
+		}
+		
+		.right_info {
+			float: none;
+			width: 100%;
+			height: auto;
+			color: #f2d8a7;
+			padding-bottom: 10px;
+			
+			.ttl { padding: 0px 0 10px 0;}
+			
+		}
+		
+		p.dot { margin-left: 20px; float: left; clear: left;  text-align: left;}
+	}
+	
+	
+	.direction_slide {
+		height: auto;
+		margin-top: 20px;
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#929a9d+0,eceded+100,7db9e8+100,2989d8+100 */
+		background: #929a9d; /* Old browsers */
+		background: -moz-linear-gradient(top, #929a9d 0%, #eceded 100%, #7db9e8 100%, #2989d8 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #929a9d 0%,#eceded 100%,#7db9e8 100%,#2989d8 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #929a9d 0%,#eceded 100%,#7db9e8 100%,#2989d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#929a9d', endColorstr='#2989d8',GradientType=0 ); /* IE6-9 */
+		
+		
+		
+		.info_text {
+			margin-top: 10px;
+			width: 100%;
+			margin: 0;
+			float: none;
+			
+			
+			
+			h2 {
+				font-size: 25px;
+				line-height: 25px;
+				padding: 20px 10px;
+				margin-bottom: 20px;
+			}
+			
+			p {
+				padding: 0 10px 20px 10px;
+			}
+		}
+	}
+	
+	.second_slide {
+		height: auto;
+		padding-bottom: 100px;
+		
+		.width_wrapper{
+			padding: 0 10px;
+		}
+		
+		.foto_menu {
+			padding: 20px 0 0 0;
+		}
+	}
+	
+	
+	.foto_slide, .about_slide {
+		.foto_menu, .about_menu {
+			padding: 20px 0 0 0;
+			overflow: hidden;
+			
+			h2 {
+				@include beige_header;
+				text-align: left;
+				width: 100%;
+				margin: 0;
+				float: none;
+				padding-bottom: 13px;
+			}
+			
+			
+			.fitem { float: left;
+				padding-top: 3px;
+				font-size: 17px;
+				line-height: 17px;
+			}
+			
+			.fitem.selected {
+				position: relative;
+				&:before {
+					position: absolute;
+					content: "";
+					width: 7px;
+					height: 7px;
+					display: block;
+					background-color:#f2d8a7;
+					left: 2px;
+					top: -5px;
+					
+				}
+			}
+			
+			
+			
+			.fitem.empty { padding: 4px 3px 0 3px; font-weight: normal;}
+		}
+		
+		
+		.foto_menu2 {
+			text-align: center;
+			padding: 15px 0 15px 0;
+			overflow: hidden;
+			
+			.item {
+				width:auto; 
+				display: inline-block;
+				text-align: left;
+				vertical-align: top;
+				text-transform: uppercase;
+				height: auto;
+			}
+			
+			.item.first 
+			{
+				width: auto;
+				
+				/*text-align: right;*/
+			}
+			
+			.item.first, .item {
+				margin: 0px 0px 10px 0px;
+				float: left;
+				width: 100%;
+				
+			}
+			
+			
+			a { 	font-size: 13px;
+				line-height: 13px;
+				
+			}
+			
+			
+		}
+		
+		
+	}
+	
+	.swiper_padding_wrapper {
+		margin: 0px;
+		
+		.left_blur_image, .right_blur_image  {
+			height: 250px;
+			top: 0px;
+		}
+		
+	}
+	
+	.gallery-top {
+		height: 250px; 
+	}
+	
+	.gallery-thumbs {
+		height: 60px;
+	}
+	
+	.swiper_padding_wrapper2 {
+		margin: 0 10px;
+	}
+
+
+
+
+
+.top_ball {
+	left: 10px;
+	top: 10px;
+	
+	a.more {
+		width: 102px;
+		display: inline-block;
+		color: #fff;
+		font-family: 'Cam';
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 14px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 42px;
+	}
+	
+}
+
+.top_ball.active {
+	
+	.like_tbl {
+		width: 100%;
+		
+		.like_td{
+			padding: 0 40px 0 31px;
+			font-size: 12px;
+			line-height: 14px;
+			
+			a.close_more{
+				position: absolute;
+				top: 40px;
+				right: 10px;
+			}
+		
+		}
+		
+	}
+	
+	
+}
+
+
+.about_slide { height: auto;
+	background: #eff1f3;
+	.width_wrapper { padding: 0 10px;}
+	
+	.about_menu {
+		left: 10px;
+		padding-top: 10px;
+	}
+	
+	.about_text {
+		width: 100%;
+		float: none;
+		height: auto;
+		
+		.about_text_wrapper {
+			padding: 0px;
+		}
+		
+		h2 {
+			padding: 10px 0;
+		}
+
+		span {
+			font-size: 20px;
+			line-height: 20px;
+			padding-bottom: 20px;
+		}
+		
+		
+	}
+	
+	.fitem.empty { display: none;}
+	.fitem { margin-right: 15px; margin-bottom: 5px;}
+
+}
+
+.about_slide2 { display: none;}
+
+
+
+
+}

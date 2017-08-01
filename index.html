@@ -39,16 +39,16 @@
 </head>
 <body>
 	<div id="page" style="height:100%;">
-		<!--
+		
 		<div class="mobile_header Fixed">
 			<div class="width_wrapper">
 				<a id="for_mobile_menu" href="#mobile-menu"></a>
 
-				<a class="mperson" href="#personalmenu"><img src="files/images/person_3.png" data-retinasrc="files/images/person_3.png"></a>
+				<!--<a class="mperson" href="tel:"></a>-->
 			
 				<a class="m_logo" href="#"></a>
 			</div>
-		</div>-->
+		</div>
 		
 		<div class="main_section">
 			
@@ -67,11 +67,11 @@
 						
 						<nav>
 							<ul id="desktop-menu">
-								<li><a href="#">Операции</a></li>
+								<li><a href="#operation">Операции</a></li>
 								<li class="sep">|</li>
-								<li><a href="#">О хирурге</a></li>
+								<li><a href="#surgeon">О хирурге</a></li>
 								<li class="sep">|</li>
-								<li><a href="#">Отзывы</a></li>
+								<li><a href="#response">Отзывы</a></li>
 								<li class="sep">|</li>
 								<li><a href="#">Блог</a></li>
 								<li class="sep">|</li>
@@ -139,11 +139,12 @@
 			</div>
 		</div>
 		
+		
 		<div class="second_slide">
 			<div class="width_wrapper">	
 				<div class="foto_slide">
 					<div class="foto_menu">
-						<h2>ФОТО ОПЕРАЦИЙ:</h2>
+						<h2 id="operation">ФОТО ОПЕРАЦИЙ:</h2>
 						
 						<div class="fitem selected"><a class="foto_top_menu" data-submenu="for_menu1" href="javascript:;">ГРУДЬ</a></div>
 						<div class="fitem empty">...............</div>
@@ -220,7 +221,7 @@
 						<div class="swiper-container gallery-top">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide" data-num="0" style="background-image:url(files/images/content/g1.jpg)">
-								
+									<a class="for_popup" href="files/images/content/g1.jpg" data-fancybox="gallery1" data-caption="My caption"></a>
 									<div class="top_ball"><a href="#" class="more">ПОДРОБНЕЕ</a>
 										<div class="like_tbl">
 											<div class="like_td">
@@ -232,10 +233,18 @@
 										</div>
 									</div>
 								</div>
-								<div class="swiper-slide" data-num="1" style="background-image:url(files/images/content/g_2.jpg)"></div>
-								<div class="swiper-slide" data-num="2" style="background-image:url(files/images/content/g_3.jpg)"></div>
-								<div class="swiper-slide" data-num="3" style="background-image:url(files/images/content/g_4.jpg)"></div>
-								<div class="swiper-slide" data-num="4" style="background-image:url(files/images/content/g_5.jpg)"></div>
+								<div class="swiper-slide" data-num="1" style="background-image:url(files/images/content/g_2.jpg)">
+									<a class="for_popup" href="files/images/content/g_2.jpg" data-fancybox="gallery1" data-caption="My caption"></a>
+								</div>
+								<div class="swiper-slide" data-num="2" style="background-image:url(files/images/content/g_3.jpg)">
+									<a class="for_popup" href="files/images/content/g_3.jpg" data-fancybox="gallery1" data-caption="My caption"></a>
+								</div>
+								<div class="swiper-slide" data-num="3" style="background-image:url(files/images/content/g_4.jpg)">
+									<a class="for_popup" href="files/images/content/g_4.jpg" data-fancybox="gallery1" data-caption="My caption"></a>
+								</div>
+								<div class="swiper-slide" data-num="4" style="background-image:url(files/images/content/g_5.jpg)">
+									<a class="for_popup" href="files/images/content/g_5.jpg" data-fancybox="gallery1" data-caption="My caption"></a>
+								</div>
 							</div>
 						</div>
 						
@@ -290,23 +299,6 @@
 				});
 				galleryTop.params.control = galleryThumbs;
 				galleryThumbs.params.control = galleryTop;
-				
-				/*
-				function ChangeLeftImage(index)
-				{
-					var left_index = (index-1+g_count)%g_count;
-					$(".left_blur_image img").attr("src", images[left_index]);
-				}
-				
-				function ChangeRightImage(index)
-				{
-					var left_index = (index+1+g_count)%g_count;
-					
-					$(".right_blur_image img").attr("src", images[left_index]);
-				}
-				*/
-				//galleryTop.slideTo(2, 0, false);
-				
 				</script>
 					
 					
@@ -328,7 +320,7 @@
 						<div class="fitem"><a href="javascript:;"  data-aboutid="about3" data-num="3">ГАРАНТИИ</a></div>
 				</div>
 				
-				<div class="about_text">
+				<div class="about_text" id="surgeon">
 					<div class="about_text_wrapper selected" id="about1">
 						<h2>ЭЛЬДАР БЕГРАЛОВИЧ КАХРАМАНОВ</H2>
 						<span>пластический хирург</span>
@@ -415,17 +407,20 @@
 				</div>
 				
 				
+				<!--
 				
 				<div class="swiper_padding_wrapper for_foto" id="foto-slider">
 					<div class="swiper-container gallery-foto" id="gallery-foto">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)">
+								<a class="for_popup" href="files/images/content/g2.jpg" data-fancybox="responses" data-caption="My caption"></a>
+							</div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"><a class="for_popup" href="files/images/content/g2.jpg" data-fancybox="responses" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"><a class="for_popup" href="files/images/content/g2.jpg" data-fancybox="responses" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"><a class="for_popup" href="files/images/content/g2.jpg" data-fancybox="responses" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"><a class="for_popup" href="files/images/content/g2.jpg" data-fancybox="responses" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"><a class="for_popup" href="files/images/content/g2.jpg" data-fancybox="responses" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g2.jpg)"><a class="for_popup" href="files/images/content/g2.jpg" data-fancybox="responses" data-caption="My caption"></a></div>
 						</div>
 					</div>
 					
@@ -444,9 +439,9 @@
 				
 				galleryFoto.slideTo(2, 0, false);
 				</script>
+				-->
 				
-				
-				
+				<!--
 				<div class="swiper_padding_wrapper for_foto" id="diplom-slider" style="display: none;">
 					<div class="swiper-container diplom-foto" id="diplom-foto">
 						<div class="swiper-wrapper">
@@ -469,40 +464,24 @@
 					<div class="swiper-button-prev"></div>
 				</div>
 				
-				<script>
-				/*
-				var diplomSlider = new Swiper('#diplom-foto', {
-					nextButton: '#diplom-slider .swiper-button-next',
-					prevButton: '#diplom-slider .swiper-button-prev',
-					slidesPerView: 'auto',
-					loop: true,
-					spaceBetween: 31,
-					centeredSlides: true,
-					paginationClickable: true
-				});
-				
-				diplomSlider.slideTo(2, 0, false);*/
-				</script>
 				
 				
 				
 				
-				
-				
-				<h2 class="subttl"><span>ЭЛЬДАР КАХРАМАНОВ</span> ОТЗЫВЫ ПАЦИЕНТОВ <span><a class="btn1 write_response" href="javascript:;">НАПИСАТЬ ОТЗЫВ</a></span></h2>
+				<h2 class="subttl" id="response"><span>ЭЛЬДАР КАХРАМАНОВ</span> ОТЗЫВЫ ПАЦИЕНТОВ <span><a class="btn1 write_response" href="javascript:;">НАПИСАТЬ ОТЗЫВ</a></span></h2>
 				
 				
 				
 				<div class="swiper_padding_wrapper for_foto">
 					<div class="swiper-container gallery-foto" id="response_slider">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
-							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"><a class="for_popup" href="files/images/content/g3.jpg" data-fancybox="resp" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"><a class="for_popup" href="files/images/content/g3.jpg" data-fancybox="resp" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"><a class="for_popup" href="files/images/content/g3.jpg" data-fancybox="resp" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"><a class="for_popup" href="files/images/content/g3.jpg" data-fancybox="resp" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"><a class="for_popup" href="files/images/content/g3.jpg" data-fancybox="resp" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"><a class="for_popup" href="files/images/content/g3.jpg" data-fancybox="resp" data-caption="My caption"></a></div>
+							<div class="swiper-slide" style="background-image:url(files/images/content/g3.jpg)"><a class="for_popup" href="files/images/content/g3.jpg" data-fancybox="resp" data-caption="My caption"></a></div>
 						</div>
 					</div>
 					
@@ -523,12 +502,12 @@
 				galleryFoto.slideTo(2, 0, false);
 				</script>
 				
-				
-				
+				-->
 				
 					
 			</div>
 			
+			<!--
 			<div class="about_slide2">
 				<div class="width_wrapper">	
 					<div class="about_foto2" id="about_foto2">
@@ -543,11 +522,11 @@
 					</div>
 				</div>
 			</div>
-			
+			-->
 		</div>
 		
 		
-		
+		<!--
 		<div class="blog_slide">
 			<div class="blog_width_wrapper">	
 			
@@ -670,7 +649,7 @@
 			</div>
 		</div>
 		
-		
+		-->
 		
 		<footer>
 			<div class="blue">
@@ -823,6 +802,9 @@
 				
 			</div>
 		</div>
+		
+		<nav id="mobile-menu"><ul></ul></nav>	
+		<div id="temp"></div>
 		
 		
 		
