@@ -1,10 +1,12 @@
 var mobileWidth = 766;
 var is_mobile = false;
 var file_input_count = 1;
+var window_width = 320;
 
 jQuery(document).ready(function( $ ) {
 
 	is_mobile = ($(window).width()<=mobileWidth);
+	window_width = $(window).width();
 	
 	$('nav').attr("data-width", $('nav').outerWidth());
 	
@@ -66,9 +68,24 @@ function _foto_menu() {
 		$(this).addClass("selected");
 		
 		$( "#fotoLoader" ).load( "ajax/response.html" );
-		
-		
 	});
+	
+	//responses
+	$(document).on("click",".response_link",function(event) {
+		event.preventDefault();
+		
+				
+		var response_id = $(this).data("respid");
+
+		//todo
+		
+		$("#dialog-response").dialog("open");
+	
+		//$( "#fotoLoader" ).load( "ajax/response.html" );
+	});
+	
+	
+	
 	
 	var diplomSliderIsInit = 0;
 	
@@ -266,9 +283,14 @@ function _default_init()
 
 function _init_popup()
 {
+	var winwidth = 1100;
+	if (window_width<=winwidth)
+		winwidth = window_width;
+	
+	
 	$( "#dialog-addresponse" ).dialog({
       autoOpen: false,
-	  width: 1100,
+	  width: winwidth,
 	  modal: true,
 	   open: function() {
 			$('.ui-widget-overlay').addClass('custom-overlay');
@@ -291,6 +313,7 @@ function _init_popup()
 	$(document).on("click",".write_response",function(event) {
 		event.preventDefault();
 		
+		//dialog-response
 		$( "#dialog-addresponse" ).dialog("open");
 		
 	})
@@ -327,9 +350,9 @@ function _init_popup()
 	
 	
 	
-	$( "#dialog-response" ).dialog({
+	$("#dialog-response" ).dialog({
       autoOpen: false,
-	  width: 1100,
+	  width: winwidth,
 	  modal: true,
 	   open: function() {
 			$('.ui-widget-overlay').addClass('custom-overlay');
@@ -375,8 +398,6 @@ function _init_mobile_menu()
 		var menu = '<h3 class="mobile_info"><span>Запись на бесплатную консультацию:</span><br/>+7 906 090  99 22</h3>';
 
 		menu += $("#desktop-menu").html();
-
-		console.log(menu);
 
 		$("#mobile-menu ul").append(menu);
 

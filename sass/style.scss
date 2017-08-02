@@ -201,6 +201,7 @@ a:hover {
 nav {
 	float: right;
 	clear: right;
+	padding-right: 10px;
 	
 	ul { display: block;
 		padding: 24px 0px 19px 20px;
@@ -550,18 +551,16 @@ p.dot {
 	.swiper-button-next, .swiper-button-prev {
 		background-size: auto;
 		margin-top: -77px;
+		width: 36px;
+		height: 64px;
 	}
 	
 	.swiper-button-next {
-		width: 36px;
-		height: 64px;
 		right: -59px;
 		@include retina-sprite(next);
 	}
 
 	.swiper-button-prev {
-		width: 36px;
-		height: 64px;
 		left: -58px;
 		@include retina-sprite(prev);
 	}
@@ -665,7 +664,7 @@ p.dot {
 	
 .about_slide {
 	position: relative;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	background: url(../images/bg_about_slide.jpg) no-repeat;
 	background-position: top center;
 	
@@ -1247,7 +1246,7 @@ footer {
 	.blog_slide
 	{
 		height: 855px;
-		background: url(../images/bg_blog3.jpg) no-repeat;
+		/*background: url(../images/bg_blog3.jpg) no-repeat;*/
 	}
 	
 }
@@ -1659,6 +1658,7 @@ textarea.wt { padding: 14px;}
 
 .opacityNone { @include opacity(0); z-index: 9;}
 .opacityBlock{ @include opacity(1); z-index: 10;}
+#mobile-menu, .blog_img_mobile { display: none;}
 
 @import "320";
-/*@import "768";*/
+@import "768";
