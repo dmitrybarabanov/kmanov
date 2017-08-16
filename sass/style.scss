@@ -408,13 +408,14 @@ p.dot {
 {
 	background: url(../images/bg_foto_slide.jpg) no-repeat;
 	background-position: top center;
-	height: 1224px;
+	/*height: 1224px;*/
+	height: 1050px;
 }
 
 .foto_slide, .about_slide {
 	
 	.foto_menu, .about_menu {
-		padding: 91px 0 0 0;
+		padding: 71px 0 0 0; /*91px*/
 		overflow: hidden;
 		
 		h2 {
@@ -470,7 +471,8 @@ p.dot {
 	.foto_menu2 {
 		
 		text-align: center;
-		padding: 65px 0 46px 0;
+		/*padding: 65px 0 46px 0;*/
+		padding: 35px 0 26px 0;
 		.item {width:auto; /*230px;*/  display: inline-block; margin: 0 45px;
 			text-align: left;
 			vertical-align: top;
@@ -502,6 +504,7 @@ p.dot {
 	
 }
 
+
 .left_right_wrapper {
 	width: 100%;
 	overflow: hidden;
@@ -515,7 +518,7 @@ p.dot {
 	
 	
 	.left_blur_image, .right_blur_image {
-		height: 579px;
+		height: 479px; /*579*/
 		width: 100%;
 		position: absolute;
 		top: 37px;
@@ -582,7 +585,7 @@ p.dot {
         background-position: center;
     }
     .gallery-top {
-        height: 616px;
+        height: 516px; /*616*/
         width: 100%;
     }
     .gallery-thumbs {
@@ -601,7 +604,19 @@ p.dot {
 		  -o-filter: grayscale(100%);
 		  filter: grayscale(100%);
 		  filter: gray;
+		  @include transition(all 0.2s ease-in-out);
     }
+	
+	.gallery-thumbs .swiper-slide:hover {
+		
+        -webkit-filter: none;
+		  -moz-filter: none;
+		  -ms-filter: none;
+		  -o-filter: none;
+		  filter: none;
+		  
+    }
+	
     .gallery-thumbs .swiper-slide-active {
         @include opacity(1);
     }
@@ -664,7 +679,7 @@ p.dot {
 	
 .about_slide {
 	position: relative;
-	overflow: hidden;
+	overflow: visible;
 	background: url(../images/bg_about_slide.jpg) no-repeat;
 	background-position: top center;
 	
@@ -852,9 +867,10 @@ a.btn1 {
 			-webkit-align-items: center;
 			align-items: center;
 			margin-top: 21px;
+			@include transition(all 0.2s ease-in-out);
 		}
 		
-		.swiper-slide.swiper-slide-active {
+		/*.swiper-slide.swiper-slide-active, */.swiper-slide:hover {
 			margin-top: 0px;
 		}
 		
@@ -867,9 +883,9 @@ bg_blog
 
 .blog_slide
 {
-	height: 855px;
+	height: 705px;
 	background: url(../images/bg_blog.jpg) no-repeat;
-	background-position: top center;
+	background-position: bottom center;
 	position: relative;
 	
 	.blog_width_wrapper {
@@ -902,7 +918,7 @@ bg_blog
 	}
 	
 	#blog_slider{
-		height: 700px;
+		height: 580px;
 		
 		.swiper-wrapper {
 			.swiper-slide {
@@ -921,10 +937,10 @@ bg_blog
 		}
 		
 		.blog_link {
-			width: 220px;
+			width: 180px;/*220px;*/
 			a {
-				width: 220px;
-				height: 220px;
+				width: 180px;
+				height: 180px;
 				display: inline-block;
 				float: left;
 			}
@@ -1245,8 +1261,8 @@ footer {
 	
 	.blog_slide
 	{
-		height: 855px;
-		/*background: url(../images/bg_blog3.jpg) no-repeat;*/
+		height: 705px;
+		background: url(../images/bg_blog3.jpg) no-repeat;
 	}
 	
 }
