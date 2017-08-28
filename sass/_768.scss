@@ -84,9 +84,9 @@ $icons-sprite-dimensions: true;
 	}
 	
 	.about_k {
-		background: none;
-		padding: 0 10px;
-		background: rgba(41,54,67, 0.9);
+		/*background: none;*/
+		padding: 0 200px 0 10px;
+		/*background: rgba(41,54,67, 0.9);*/
 		height: auto;
 		
 		.left_info {
@@ -94,7 +94,7 @@ $icons-sprite-dimensions: true;
 			width: 100%;
 			padding-top: 20px;
 			overflow: hidden;
-			padding-bottom: 80px;
+			padding-bottom: 20px;
 			
 			span { display: block;
 				text-align: right;
@@ -108,11 +108,12 @@ $icons-sprite-dimensions: true;
 		}
 		
 		.right_info {
+			display: none;
 			float: none;
 			width: 100%;
 			height: auto;
 			color: #f2d8a7;
-			padding-bottom: 60px;
+			padding-bottom: 20px;
 			
 			.like_tbl {     width: 48%; margin: 0 auto;}
 			
@@ -215,7 +216,7 @@ $icons-sprite-dimensions: true;
 			}
 			
 			h2 {
-				padding: 10px 0;
+				padding: 20px 0 10px 0;
 			}
 
 			span {

@@ -19,6 +19,7 @@ body, html {
   color: #000;
 }
 
+
 a {
 	color: inherit;
 	&:hover { color: #000;}
@@ -132,7 +133,7 @@ input, textarea {
 
 	width: 100%;
 	position: absolute;
-	top: 230px;
+	top: 135px;
 	left: 0px;
 	z-index: 6;
 	height: 600px;
@@ -190,7 +191,7 @@ input, textarea {
 	line-height: 16px;
 	float: right;
 	color: #fff;
-	margin: 63px 0 21px 0;
+	margin: 29px 0 21px 0;
 	@include shadow_white;
 }
 
@@ -1671,6 +1672,12 @@ textarea.wt { padding: 14px;}
 	
 	
 }
+
+#more_news { border: solid 2px #293643; color:#293643;
+  margin: 20px auto 20px auto;
+}
+
+#news_loader { text-align: center;}
 
 .opacityNone { @include opacity(0); z-index: 9;}
 .opacityBlock{ @include opacity(1); z-index: 10;}

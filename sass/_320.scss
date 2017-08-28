@@ -119,6 +119,11 @@ $icons-sprite-dimensions: true;
 			
 			.left_info { padding: 10px 0 10px 0; font-size: 14px;}
 			.right_info {  padding: 12px 0 20px 0;
+			
+					
+			
+			
+			
 				text-align: left;
 				div { font-size: 14px;}
 			}
@@ -146,7 +151,7 @@ $icons-sprite-dimensions: true;
 	
 	.about_k {
 		background: none;
-		padding: 0 10px;
+		padding: 0 00px;
 		background: rgba(41,54,67, 0.9);
 		height: auto;
 		
@@ -156,11 +161,13 @@ $icons-sprite-dimensions: true;
 			padding-top: 20px;
 			overflow: hidden;
 			padding-bottom: 20px;
+			padding: 0 10px 10px 10px;
 			
 			h1 {
 				font-size: 25px;
 				line-height: 28px;
 				padding-bottom: 20px;
+				padding-top: 10px;
 			}
 		}
 		
@@ -168,10 +175,19 @@ $icons-sprite-dimensions: true;
 			float: none;
 			width: 100%;
 			height: auto;
-			color: #f2d8a7;
+			color: #263340;
 			padding-bottom: 10px;
 			
+			background: url(../images/bg_guarantie.jpg) 100% 100% no-repeat;
+			background-size: cover;
+			text-align: center;
+			
 			.ttl { padding: 0px 0 10px 0;}
+			
+			.like_tbl { width:100%;
+			
+				.like_td { padding: 20px 10px 0 10px; display: block; width: auto;}
+			}
 			
 		}
 		

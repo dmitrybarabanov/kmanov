@@ -194,7 +194,7 @@ input, textarea {
 .sisters {
   width: 100%;
   position: absolute;
-  top: 230px;
+  top: 135px;
   left: 0px;
   z-index: 6;
   height: 600px;
@@ -265,7 +265,7 @@ input, textarea {
   line-height: 16px;
   float: right;
   color: #fff;
-  margin: 63px 0 21px 0;
+  margin: 29px 0 21px 0;
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
 
@@ -1915,6 +1915,16 @@ textarea.wt {
   }
 }
 
+#more_news {
+  border: solid 2px #293643;
+  color: #293643;
+  margin: 20px auto 20px auto;
+}
+
+#news_loader {
+  text-align: center;
+}
+
 .opacityNone {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -2109,7 +2119,7 @@ textarea.wt {
 
   .about_k {
     background: none;
-    padding: 0 10px;
+    padding: 0 00px;
     background: rgba(41, 54, 67, 0.9);
     height: auto;
   }
@@ -2119,21 +2129,34 @@ textarea.wt {
     padding-top: 20px;
     overflow: hidden;
     padding-bottom: 20px;
+    padding: 0 10px 10px 10px;
   }
   .about_k .left_info h1 {
     font-size: 25px;
     line-height: 28px;
     padding-bottom: 20px;
+    padding-top: 10px;
   }
   .about_k .right_info {
     float: none;
     width: 100%;
     height: auto;
-    color: #f2d8a7;
+    color: #263340;
     padding-bottom: 10px;
+    background: url(../images/bg_guarantie.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    text-align: center;
   }
   .about_k .right_info .ttl {
     padding: 0px 0 10px 0;
+  }
+  .about_k .right_info .like_tbl {
+    width: 100%;
+  }
+  .about_k .right_info .like_tbl .like_td {
+    padding: 20px 10px 0 10px;
+    display: block;
+    width: auto;
   }
   .about_k p.dot {
     margin-left: 20px;
@@ -2849,9 +2872,9 @@ textarea.wt {
   }
 
   .about_k {
-    background: none;
-    padding: 0 10px;
-    background: rgba(41, 54, 67, 0.9);
+    /*background: none;*/
+    padding: 0 200px 0 10px;
+    /*background: rgba(41,54,67, 0.9);*/
     height: auto;
   }
   .about_k .left_info {
@@ -2859,7 +2882,7 @@ textarea.wt {
     width: 100%;
     padding-top: 20px;
     overflow: hidden;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
   .about_k .left_info span {
     display: block;
@@ -2871,11 +2894,12 @@ textarea.wt {
     padding-bottom: 0px;
   }
   .about_k .right_info {
+    display: none;
     float: none;
     width: 100%;
     height: auto;
     color: #f2d8a7;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
   .about_k .right_info .like_tbl {
     width: 48%;
@@ -2963,7 +2987,7 @@ textarea.wt {
     padding: 0px;
   }
   .about_slide .about_text h2 {
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
   }
   .about_slide .about_text span {
     font-size: 20px;

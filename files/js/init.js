@@ -1,7 +1,18 @@
-var mobileWidth = 766;
+var mobileWidth = 768;
 var is_mobile = false;
 var file_input_count = 1;
 var window_width = 320;
+
+
+var sis_height = 0; /*---------------------*/
+var systers_padding_top = 135; //отсуп от верха для сестер
+var minFirst_section_height = 530; //минимальная высота сестер
+var maxFirst_section_height = 910; //минимальная высота сестер
+var women_height = 810; //высота тетки в конце первого слайда
+var max_main_section_height = 1861;
+
+
+
 
 jQuery(document).ready(function( $ ) {
 
@@ -38,8 +49,6 @@ function _init_anchor_going()
 }
 
 function _foto_menu() {
-	
-	//foto_top_menu
 	
 	$(document).on("click",".foto_top_menu",function(event) {
 		event.preventDefault();
@@ -197,26 +206,38 @@ function _image_dopinfo_init()
 	
 }
 
-function _sisters_init()
+function _sisters_init() /*--------------------*/
 {
-	var systers_padding_top = 230; //отсуп от верха для сестер
-	var minFirst_section_height = 530; //минимальная высота сестер
-	var women_height = 810; //высота тетки в конце первого слайда
+	
 	
 	// Home
-	if (is_mobile==false)
+	if (is_mobile==false || true)
 	{
 		var h = $(window).height();
 		
-		var sisHeight =  h-systers_padding_top;
+		var sisHeight =  h-systers_padding_top - $(".about_k").height()+120;
 		
-		if (sisHeight<minFirst_section_height)
+		if (sisHeight<minFirst_section_height) /*минимальная высота*/
 			sisHeight = minFirst_section_height;
+			
+		if (sisHeight>maxFirst_section_height) /*максимальная высота*/
+			sisHeight = maxFirst_section_height;
+			
+		sis_height = sisHeight;
+	
 		
 		$(".sisters").css("height", sisHeight+"px");
 		
 	
-		$(".main_section").css("height", (systers_padding_top+sisHeight+women_height)+"px");
+		var main_section_height = systers_padding_top+sisHeight+women_height;
+		
+		/*if (main_section_height> max_main_section_height) {
+			main_section_height= max_main_section_height;
+		}*/
+		
+		$(".main_section").css("height", (main_section_height)+"px");
+		
+		
 		
 		$(".first_slide").css("height", (systers_padding_top+sisHeight+200)+"px");
 		
@@ -239,6 +260,19 @@ function _init_main_page_scroll()
 			amp = 0.43;
 		if(parallaxBlock.length) {
 			$(document).on('scroll', function() {
+				
+				var about_k_height = $(".about_k").height();
+				/*
+				console.log("about_k_height="+about_k_height);
+				console.log("systers_padding_top="+systers_padding_top);
+				console.log("sis_height="+sis_height);
+				*/
+				//
+				
+				var h = $(".first_slide").height() - sis_height - systers_padding_top - 10;
+				console.log("h="+h);
+				
+				
 				var scrollTop = $(window).scrollTop(),
 					dist = parseInt(scrollTop * amp);
 					
@@ -260,9 +294,9 @@ function _init_top_menu()
 	});
 }
 
-function _default_init()
+function _default_init() /*------------------*/
 {
-	var top_menu_position_hide = 100;
+	var top_menu_position_hide = 66;
 	if ($("#page").hasClass("inner_page"))
 	{
 		top_menu_position_hide = 76;
