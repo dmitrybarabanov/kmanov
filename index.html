@@ -12,7 +12,7 @@
 	<link rel="stylesheet" media="screen" href="files/css/jquery-ui.min.css" >
 	<link rel="stylesheet" media="screen" href="files/css/jquery-ui.theme.css" >
 	
-	<!--<script src="files/js/validate.js"></script> -->
+	<script src="files/js/validate.js"></script>
 	
 	<link rel="stylesheet" media="screen" href="files/css/swiper.min.css" >
 	<script src="files/js/swiper.min.js"></script>
@@ -692,6 +692,7 @@
 		
 		
 		<div id="dialog-addresponse">
+			<form id="response_form" enctype='multipart/form-data' action="/ajax/add_response.php">
 			<div class="modal_ttl">НАПИСАТЬ ОТЗЫВ</div>
 			<a href="javascript:;" class="close_btn"></a>
 			<div class="modal_ttl_wrapper">
@@ -702,49 +703,44 @@
 				<div class="padding_wrapper">
 					<div class="left_side">
 						<label for="fname">Имя*</label><br/>
-						<input type="text" class="wt req" name="fname">
+						<input type="text" emessage="Пожалуйста, введите имя" class="wt req" name="fname">
 					</div>
 					<div class="right_side" id="images_container">
-					
-						
-					
-					
 						<input type="file" id="file1" name="myfile1"/>
 						<input type="file" id="file2" name="myfile2"/>
 						<input type="file" id="file3" name="myfile3"/>
 						<input type="file" id="file4" name="myfile4"/>
 						<input type="file" id="file5" name="myfile5"/>
 						<div class="add_foto_div">Добавить<br/> свое фото</div>
-						
-					
 					</div>
 					
 					<div class="center_side">
 						<label for="ftxt">Текст*</label><br/>
-						<textarea name="ftxt" class="wt req"></textarea>
+						<textarea name="ftxt"  emessage="Пожалуйста, введите текст" class="wt req"></textarea>
 					</div>
 					
-					
-					<a href="javascript:;" class="btn_type1">Оставить отзыв</a>
+					<a href="javascript:;" id="submit_response" class="btn_type1">Оставить отзыв</a>
 					<div class="req_info">Поля отмеченны звездочкой, обязательны к заполнению</div>
-					
 				</div>
-				 
 			</div>
-			
-		 
+			</form>
 		</div>
 		
+		
+		<script>
+			var current_response = 0;
+			var indexes = [10, 20, 30];
+		</script>
 		
 		<div id="dialog-response">
 			
 			<a href="javascript:;" class="close_btn"></a>
 			
-			<a href="#" class="next-resp"></a>
-			<a href="#" class="prev-resp"></a>
+			<a href="javascript:;" id="load_next_resp" class="next-resp"></a>
+			<a href="javascript:;"  id="load_prev_resp" class="prev-resp"></a>
 			
 			
-			<div class="response_wrapper">
+			<div class="response_wrapper" id="response_content">
 				<div class="for_dt"><span class="nm1">26.05.2017</span> <span class="nm2">Татьяна</span></div>
 				<p>Об этом враче могу говорить бескончно долго и как о человеке и как о докторе.
 				Об этом враче могу говорить бескончно долго и как о человеке и как о докторе.
@@ -767,6 +763,7 @@
 				
 			</div>
 		</div>
+		
 		
 		<nav id="mobile-menu"><ul></ul></nav>	
 		<div id="temp"></div>

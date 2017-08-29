@@ -1657,16 +1657,22 @@ a.btn_type1:hover {
 }
 
 input.wt, textarea.wt {
-  padding: 3px 14px 4px 14px;
+  padding: 1px 12px 2px 12px;
   box-sizing: padding-box;
   border: 0px;
   background-color: #fff;
   font-size: 15px !important;
   color: #000;
+  border: solid 2px #fff;
 }
 
 textarea.wt {
-  padding: 14px;
+  padding: 12px;
+}
+
+input.wt.error, textarea.wt.error {
+  border: solid 2px #c8231e;
+  color: #c8231e;
 }
 
 .ui-dialog-titlebar {
@@ -1939,6 +1945,38 @@ textarea.wt {
 
 #mobile-menu, .blog_img_mobile {
   display: none;
+}
+
+#status-info {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+}
+#status-info .txt {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+  width: 300px;
+  height: 50px;
+  background-color: #293643;
+  text-align: center;
+  font-family: 'Cam';
+  font-size: 19px;
+  line-height: 19px;
+  color: #fff;
+  display: block;
+  margin-left: -150px;
+  margin-top: -25px;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  padding: 13px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 767px) {

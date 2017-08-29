@@ -34,7 +34,55 @@ jQuery(document).ready(function( $ ) {
 	_init_anchor_going();
 	_init_mobile_menu();
 	
+	_init_forms();/*!!!!*/
+	_init_responses();
 });
+
+
+function _init_responses()
+{
+	$(document).on("click","#load_next_resp",function(event) {
+		event.preventDefault();
+		current_response ++;
+		current_response = current_response%indexes.length;
+		loadresponse(indexes[current_response]);
+	});
+	
+	$(document).on("click","#load_prev_resp",function(event) {
+		event.preventDefault();
+		current_response--;
+		current_response = (current_response+indexes.length)%indexes.length;
+		//loadresponse(indexes[current_response]);
+		console.log(current_response+" "+indexes[current_response])
+	});
+	
+	
+	function loadresponse($id)
+	{
+		$("#temp").load("/ajax/load_response.php?ajax=Y&id="+$id, function () {
+			$("#response_content").html($("#temp").html());
+			$("#temp").html("");
+		});
+		ajax
+		
+	}
+	
+	
+	
+	
+}
+
+function _init_forms()
+{
+	$(document).on("click","#submit_response",function(event) {
+		event.preventDefault();
+		
+		if (ValidateForm("response_form"))
+		{
+			$("#response_form").submit();
+		}
+	});
+}
 
 function _init_anchor_going()
 {
@@ -358,17 +406,7 @@ function _init_popup()
 		$("#dialog-addresponse" ).dialog("close");
 		$("#dialog-response" ).dialog("close");
 		
-	})
-	
-	$(document).on("click",".next-resp, .prev-resp",function(event) {
-		event.preventDefault();
-		event.stopPropagation();
-		
-		$("#response_content").html("Новый текст");
-		
-	})
-	
-	
+	})	
 	
 	
 	
