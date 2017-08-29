@@ -1,6 +1,8 @@
 $icons-sprite-dimensions: true;
 @import "retina";
 
+
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -18,6 +20,13 @@ $icons-sprite-dimensions: true;
 	.for_mobile_wrapper {display: none;}
 	
 	.width_wrapper  { width:100%;}
+	
+	.mobile_header.small { background: none; @include transition(all 0.2s ease-in-out);
+	
+		#for_mobile_menu { background-color: #1d2226}
+	
+		.m_logo {display: none; @include transition(all 0.2s ease-in-out);}
+	}
 	
 	.mobile_header {
 		z-index: 199; 
@@ -142,11 +151,12 @@ $icons-sprite-dimensions: true;
 		position: absolute;
 		top: 67px;
 		height: 400px;
+		margin-top: 155px;
 	}
 	
 	.first_slide {
     /* height: 1235px; */
-		height: 900px;
+		height: 948px;
 	}
 	
 	.about_k {
@@ -159,15 +169,34 @@ $icons-sprite-dimensions: true;
 			float: none;
 			width: 100%;
 			padding-top: 20px;
-			overflow: hidden;
+			overflow: visible;
 			padding-bottom: 20px;
 			padding: 0 10px 10px 10px;
+			position: relative;
+			min-height: 339px;
+			
+			.m_kahr {
+				background: url(../images/m_kahr.png) no-repeat;
+			    width:168px;	
+				height: 263px;
+				display: block;
+				position: absolute;
+				z-index: 11;
+				right: 20px;
+				top: 95px;
+			}
 			
 			h1 {
-				font-size: 25px;
-				line-height: 28px;
-				padding-bottom: 20px;
-				padding-top: 10px;
+				font-size: 24px;
+				line-height: 27px;
+				padding-bottom: 8px;
+				padding-top: 36px;
+				text-align: center;
+			}
+			span {
+				text-align: center;
+				width: 100%;
+				padding-bottom: 38px;
 			}
 		}
 		
@@ -191,7 +220,18 @@ $icons-sprite-dimensions: true;
 			
 		}
 		
-		p.dot { margin-left: 20px; float: left; clear: left;  text-align: left;}
+		p.dot { margin-left: 20px; float: left; clear: left;  text-align: left;
+			padding-right: 193px;
+			font-size: 16px;
+			line-height: 16px;
+			text-align: right;
+			float: none;
+			padding-bottom: 20px;
+			
+			&:before { display: none;}
+		}
+		
+		
 	}
 	
 	
@@ -764,12 +804,48 @@ h2.subttl {
 
 }
 
-
-
-
-
-
+.for_320 { display: block;}
+.only_320 {
+	display: block;
+	height: 200px;
+	text-align: center;
 	
+	.logo {
+		left: 50%;
+		margin-left: -110px;
+		top: 49px;
+	} 
+	.first_info { 
+		position: absolute;
+		text-align: center;
+		left: 0px;
+		top: 115px;
+		width: 100%;
+		z-index: 10;
+		
+		.large_mobile {
+			width: 100%;
+			font-size: 24px;
+			line-height: 24px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			padding-top: 6px;
+		}
+	}
+	
+}
 
 
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+	.m_kahr { display: none;}
+	.about_k p.dot { padding-right: 0; text-align: left;
+	
+	
+		&:before { display: block;}
+	}
 }

@@ -1725,5 +1725,7 @@ input.wt.error, textarea.wt.error { border: solid 2px #c8231e; color: #c8231e;}
 	
 }
 
+.only_320, .for_320 { display: none;}
+
 @import "320";
 @import "768";

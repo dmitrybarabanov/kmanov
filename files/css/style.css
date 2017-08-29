@@ -1979,6 +1979,10 @@ input.wt.error, textarea.wt.error {
   border-radius: 5px;
 }
 
+.only_320, .for_320 {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   h2 {
     font-size: 23px;
@@ -1995,6 +1999,24 @@ input.wt.error, textarea.wt.error {
 
   .width_wrapper {
     width: 100%;
+  }
+
+  .mobile_header.small {
+    background: none;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .mobile_header.small #for_mobile_menu {
+    background-color: #1d2226;
+  }
+  .mobile_header.small .m_logo {
+    display: none;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .mobile_header {
@@ -2148,11 +2170,12 @@ input.wt.error, textarea.wt.error {
     position: absolute;
     top: 67px;
     height: 400px;
+    margin-top: 155px;
   }
 
   .first_slide {
     /* height: 1235px; */
-    height: 900px;
+    height: 948px;
   }
 
   .about_k {
@@ -2165,15 +2188,33 @@ input.wt.error, textarea.wt.error {
     float: none;
     width: 100%;
     padding-top: 20px;
-    overflow: hidden;
+    overflow: visible;
     padding-bottom: 20px;
     padding: 0 10px 10px 10px;
+    position: relative;
+    min-height: 339px;
+  }
+  .about_k .left_info .m_kahr {
+    background: url(../images/m_kahr.png) no-repeat;
+    width: 168px;
+    height: 263px;
+    display: block;
+    position: absolute;
+    z-index: 11;
+    right: 20px;
+    top: 95px;
   }
   .about_k .left_info h1 {
-    font-size: 25px;
-    line-height: 28px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    font-size: 24px;
+    line-height: 27px;
+    padding-bottom: 8px;
+    padding-top: 36px;
+    text-align: center;
+  }
+  .about_k .left_info span {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 38px;
   }
   .about_k .right_info {
     float: none;
@@ -2201,6 +2242,15 @@ input.wt.error, textarea.wt.error {
     float: left;
     clear: left;
     text-align: left;
+    padding-right: 193px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    float: none;
+    padding-bottom: 20px;
+  }
+  .about_k p.dot:before {
+    display: none;
   }
 
   .direction_slide {
@@ -2814,6 +2864,50 @@ input.wt.error, textarea.wt.error {
     position: absolute;
     top: -4px;
     right: -1px;
+  }
+
+  .for_320 {
+    display: block;
+  }
+
+  .only_320 {
+    display: block;
+    height: 200px;
+    text-align: center;
+  }
+  .only_320 .logo {
+    left: 50%;
+    margin-left: -110px;
+    top: 49px;
+  }
+  .only_320 .first_info {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    top: 115px;
+    width: 100%;
+    z-index: 10;
+  }
+  .only_320 .first_info .large_mobile {
+    width: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-top: 6px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .m_kahr {
+    display: none;
+  }
+
+  .about_k p.dot {
+    padding-right: 0;
+    text-align: left;
+  }
+  .about_k p.dot:before {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1179px) {

@@ -259,7 +259,7 @@ function _sisters_init() /*--------------------*/
 	
 	
 	// Home
-	if (is_mobile==false || true)
+	if (is_mobile==false)
 	{
 		var h = $(window).height();
 		
@@ -289,6 +289,16 @@ function _sisters_init() /*--------------------*/
 		
 		$(".first_slide").css("height", (systers_padding_top+sisHeight+200)+"px");
 		
+		
+	}
+	
+	else  /*NEW*/
+	{
+		var w = $(window).width();
+		
+		console.log("w="+w);
+		
+		$(".sisters").css("height", w*0.7+"px");
 		
 	}
 	
@@ -330,6 +340,35 @@ function _init_main_page_scroll()
 				parallaxBlock.css('transform', 'translateY(-'+ dist +'px)');
 			});
 		}
+	}
+	else /*NEW*/
+	{
+		
+		$(document).on('scroll', function() {
+			var h = 190;
+			var dist = $(window).scrollTop();
+			console.log(dist+" length "+$(".mobile_header").length);
+			
+			
+			
+				
+			if (dist>h )
+			{
+				$(".mobile_header").removeClass("small");
+				console.log("1");
+			}
+			else if ($(".mobile_header").hasClass("small") == false)
+			{
+				$(".mobile_header").addClass("small");
+				console.log("2");
+			}
+				
+			
+			
+			
+		});
+		
+		
 	}
 }
 
