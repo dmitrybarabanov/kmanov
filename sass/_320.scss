@@ -13,6 +13,7 @@ $icons-sprite-dimensions: true;
 	
 	.main_section {
 		background: url(../images/bg_main_mobile.jpg) no-repeat;
+		overflow: visible;
 	}
 	
 	
@@ -203,7 +204,7 @@ $icons-sprite-dimensions: true;
 		.right_info {
 			float: none;
 			width: 100%;
-			height: auto;
+			height: 188px;
 			color: #263340;
 			padding-bottom: 10px;
 			
@@ -271,10 +272,9 @@ $icons-sprite-dimensions: true;
 	
 	.second_slide {
 		height: auto;
-		padding-bottom: 100px;
 		
 		.width_wrapper{
-			padding: 0 10px;
+			padding: 0 20px;
 		}
 		
 		.foto_menu {
@@ -283,25 +283,30 @@ $icons-sprite-dimensions: true;
 	}
 	
 	
+	.foto_slide h2 { padding-top: 38px;}
+	
 	.foto_slide, .about_slide {
 		.foto_menu, .about_menu {
 			padding: 20px 0 0 0;
 			overflow: hidden;
+			text-align: center;
 			
 			h2 {
 				@include beige_header;
-				text-align: left;
+				text-align: center;
 				width: 100%;
 				margin: 0;
 				float: none;
 				padding-bottom: 13px;
+				font-size: 18px;
 			}
 			
 			
-			.fitem { float: left;
+			.fitem { float: none;
+			    display: inline-block;
 				padding-top: 3px;
-				font-size: 17px;
-				line-height: 17px;
+				font-size: 24px;
+				line-height: 24px;
 			}
 			
 			.fitem.selected {
@@ -349,7 +354,7 @@ $icons-sprite-dimensions: true;
 			.item.first, .item {
 				margin: 0px 0px 10px 0px;
 				float: left;
-				width: 100%;
+				margin-right: 14px;
 				
 			}
 			
@@ -371,22 +376,27 @@ $icons-sprite-dimensions: true;
 		.left_blur_image, .right_blur_image  {
 			height: 250px;
 			top: 0px;
+			display: none;
 		}
 		
 		.swiper-button-next, .swiper-button-prev {
-			margin-top: -21px;
-			width: 18px;
-			height: 32px;
+			width: 45px;
+			height: 60px;
+			bottom: -82px;
+			top: auto;
 		}
 		
 		.swiper-button-next {
-			right: 9px;
-			@include retina-sprite(next2);
+			@include retina-sprite(hand-r);
+			right: auto;
+			left: 53%;
 		}
 
 		.swiper-button-prev {
-			left: 9px;
-			@include retina-sprite(prev2);
+			left: auto;
+			right: 53%;
+			
+			@include retina-sprite(hand-l);
 		}
 		
 		
@@ -401,9 +411,8 @@ $icons-sprite-dimensions: true;
 	}
 	
 	.swiper_padding_wrapper2 {
-		margin: 0 10px;
+		display: none;
 	}
-
 
 
 
@@ -458,6 +467,7 @@ $icons-sprite-dimensions: true;
 	.about_menu {
 		left: 10px;
 		padding-top: 10px;
+		position: static;
 	}
 	
 	.about_text {
@@ -835,6 +845,61 @@ h2.subttl {
 	
 }
 
+.direction_slide { display: none;}
+.directions_slide_mobile {
+	height: 338px;
+	background: url(../images/oparations.png) 100% 100% no-repeat;
+	background-size: cover;
+    background-position: center;
+	position: relative;
+	
+	.info_op {
+		font-size: 18px;
+		line-height: 21px;
+		position: absolute;
+		color: #fff;
+		@include shadow_beidge;
+		z-index: 11;
+		
+		&.pos1 { left: 8%;top: 37px;}
+		&.pos2 {  right: 8%; top: 78px;}
+		&.pos3 { left: 26%; top: 245px;}
+	}
+	
+	img { 
+		
+		width: 320px;
+		height: 397px;
+		bottom: 0px; 
+		z-index:10;
+		position: absolute;
+		left: 50%;
+		margin-left: -180px;
+	}
+	
+	.txt_wrapper { position: absolute; 
+		bottom: -31px; 
+		left: 0px;
+		width: 100%;
+		text-align: center;
+		z-index: 11;
+		
+	}
+	.txt {
+		background-color:#293643;		
+		color: #fff;
+		font-family: 'Cam';
+		padding: 22px 20px;
+		display: inline-block;
+		font-size: 18px;
+		margin: 0 auto;
+	}
+	
+}
+
+#fotoLoader {
+	padding-bottom: 103px;
+}
 
 
 

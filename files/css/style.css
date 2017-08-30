@@ -220,8 +220,8 @@ input, textarea {
   display: block;
   width: 219px;
   height: 76px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -276px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -400px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -236,12 +236,12 @@ input, textarea {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .logo {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -276px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -400px;
   }
 }
 
@@ -334,8 +334,8 @@ nav ul:after {
 .for_mobile_wrapper.fix .logom {
   width: 110px;
   height: 38px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -354px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -478px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -353,12 +353,12 @@ nav ul:after {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .for_mobile_wrapper.fix .logom {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -354px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -478px;
   }
 }
 .for_mobile_wrapper.fix .first_info {
@@ -620,8 +620,8 @@ p.dot:before {
 }
 .swiper_padding_wrapper .swiper-button-next {
   right: -59px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -460px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -584px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -633,18 +633,18 @@ p.dot:before {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .swiper_padding_wrapper .swiper-button-next {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -460px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -584px;
   }
 }
 .swiper_padding_wrapper .swiper-button-prev {
   left: -58px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -622px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -746px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -656,12 +656,12 @@ p.dot:before {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .swiper_padding_wrapper .swiper-button-prev {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -622px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -746px;
   }
 }
 
@@ -867,8 +867,8 @@ a.btn1:hover {
   width: 36px;
   height: 64px;
   right: -59px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -460px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -584px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -880,20 +880,20 @@ a.btn1:hover {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .swiper_padding_wrapper.for_foto .swiper-button-next {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -460px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -584px;
   }
 }
 .swiper_padding_wrapper.for_foto .swiper-button-prev {
   width: 36px;
   height: 64px;
   left: -58px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -622px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -746px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -905,12 +905,12 @@ a.btn1:hover {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .swiper_padding_wrapper.for_foto .swiper-button-prev {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -622px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -746px;
   }
 }
 .swiper_padding_wrapper.for_foto .swiper-button-next, .swiper_padding_wrapper.for_foto .swiper-button-prev {
@@ -1082,7 +1082,7 @@ footer .flogo {
   width: 214px;
   height: 74px;
   display: block;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
   background-position: 0 -166px;
   background-repeat: repeat-y;
   /**
@@ -1096,11 +1096,11 @@ footer .flogo {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   footer .flogo {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
     background-position: 0 -166px;
   }
 }
@@ -1133,8 +1133,8 @@ footer a.soc {
   margin: 13px 15px 0 0;
 }
 footer a.soc.insta {
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -242px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -366px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -1146,17 +1146,17 @@ footer a.soc.insta {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   footer a.soc.insta {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -242px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -366px;
   }
 }
 footer a.soc.vk {
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -769px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -893px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -1168,12 +1168,12 @@ footer a.soc.vk {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   footer a.soc.vk {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -769px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -893px;
   }
 }
 footer .beige_footer {
@@ -1210,8 +1210,8 @@ footer .beige_footer .right_info div a {
   right: 0px;
   width: 169px;
   height: 45px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -722px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -846px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -1223,12 +1223,12 @@ footer .beige_footer .right_info div a {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   footer .beige_footer .right_info div a {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -722px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -846px;
   }
 }
 
@@ -1476,7 +1476,7 @@ br.clear {
 }
 
 .close_btn {
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
   background-position: 0 -104px;
   background-repeat: repeat-y;
   /**
@@ -1491,11 +1491,11 @@ br.clear {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .close_btn {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
     background-position: 0 -104px;
   }
 }
@@ -1622,8 +1622,8 @@ a.btn_type1:hover {
   height: 60px;
   display: block;
   border: none;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -560px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -684px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -1638,12 +1638,12 @@ a.btn_type1:hover {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .file-upload-button {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -560px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -684px;
   }
 }
 
@@ -1751,8 +1751,8 @@ input.wt.error, textarea.wt.error {
 }
 
 .next-resp {
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -460px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -584px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -1765,19 +1765,19 @@ input.wt.error, textarea.wt.error {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .next-resp {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -460px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -584px;
   }
 }
 
 .prev-resp {
   left: 0px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
-  background-position: 0 -622px;
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
+  background-position: 0 -746px;
   background-repeat: repeat-y;
   /**
    * Option variable to turn on/off IE8 support.
@@ -1789,12 +1789,12 @@ input.wt.error, textarea.wt.error {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .prev-resp {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -622px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -746px;
   }
 }
 
@@ -1816,7 +1816,7 @@ input.wt.error, textarea.wt.error {
   height: 102px;
   left: 36px;
   top: 40px;
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
   background-position: 0 0;
   background-repeat: repeat-y;
   /**
@@ -1829,11 +1829,11 @@ input.wt.error, textarea.wt.error {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .top_ball {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
     background-position: 0 0;
   }
 }
@@ -1894,7 +1894,7 @@ input.wt.error, textarea.wt.error {
   position: relative;
 }
 .top_ball.active .like_tbl .like_td a.close_more {
-  background-image: url('../images/sprites/icons-s2b164d33e3.png');
+  background-image: url('../images/sprites/icons-seaeec114b8.png');
   background-position: 0 -140px;
   background-repeat: repeat-y;
   /**
@@ -1912,11 +1912,11 @@ input.wt.error, textarea.wt.error {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .top_ball.active .like_tbl .like_td a.close_more {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
     background-position: 0 -140px;
   }
 }
@@ -1991,6 +1991,7 @@ input.wt.error, textarea.wt.error {
 
   .main_section {
     background: url(../images/bg_main_mobile.jpg) no-repeat;
+    overflow: visible;
   }
 
   .for_mobile_wrapper {
@@ -2039,8 +2040,8 @@ input.wt.error, textarea.wt.error {
     width: 64px;
     height: 64px;
     float: left;
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -394px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -518px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2053,12 +2054,12 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   #for_mobile_menu {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -394px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -518px;
   }
 }
 
@@ -2066,8 +2067,8 @@ input.wt.error, textarea.wt.error {
   .m_logo {
     width: 110px;
     height: 38px;
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -354px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -478px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2085,12 +2086,12 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   .m_logo {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -354px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -478px;
   }
 }
 
@@ -2219,7 +2220,7 @@ input.wt.error, textarea.wt.error {
   .about_k .right_info {
     float: none;
     width: 100%;
-    height: auto;
+    height: 188px;
     color: #263340;
     padding-bottom: 10px;
     background: url(../images/bg_guarantie.jpg) 100% 100% no-repeat;
@@ -2286,35 +2287,41 @@ input.wt.error, textarea.wt.error {
 
   .second_slide {
     height: auto;
-    padding-bottom: 100px;
   }
   .second_slide .width_wrapper {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .second_slide .foto_menu {
     padding: 20px 0 0 0;
   }
 
+  .foto_slide h2 {
+    padding-top: 38px;
+  }
+
   .foto_slide .foto_menu, .foto_slide .about_menu, .about_slide .foto_menu, .about_slide .about_menu {
     padding: 20px 0 0 0;
     overflow: hidden;
+    text-align: center;
   }
   .foto_slide .foto_menu h2, .foto_slide .about_menu h2, .about_slide .foto_menu h2, .about_slide .about_menu h2 {
     font-size: 30px;
     line-height: 30px;
     color: #f2d8a7;
     font-family: 'Cam';
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin: 0;
     float: none;
     padding-bottom: 13px;
+    font-size: 18px;
   }
   .foto_slide .foto_menu .fitem, .foto_slide .about_menu .fitem, .about_slide .foto_menu .fitem, .about_slide .about_menu .fitem {
-    float: left;
+    float: none;
+    display: inline-block;
     padding-top: 3px;
-    font-size: 17px;
-    line-height: 17px;
+    font-size: 24px;
+    line-height: 24px;
   }
   .foto_slide .foto_menu .fitem.selected, .foto_slide .about_menu .fitem.selected, .about_slide .foto_menu .fitem.selected, .about_slide .about_menu .fitem.selected {
     position: relative;
@@ -2353,7 +2360,7 @@ input.wt.error, textarea.wt.error {
   .foto_slide .foto_menu2 .item.first, .foto_slide .foto_menu2 .item, .about_slide .foto_menu2 .item.first, .about_slide .foto_menu2 .item {
     margin: 0px 0px 10px 0px;
     float: left;
-    width: 100%;
+    margin-right: 14px;
   }
   .foto_slide .foto_menu2 a, .about_slide .foto_menu2 a {
     font-size: 13px;
@@ -2366,16 +2373,17 @@ input.wt.error, textarea.wt.error {
   .swiper_padding_wrapper .left_blur_image, .swiper_padding_wrapper .right_blur_image {
     height: 250px;
     top: 0px;
+    display: none;
   }
   .swiper_padding_wrapper .swiper-button-next, .swiper_padding_wrapper .swiper-button-prev {
-    margin-top: -21px;
-    width: 18px;
-    height: 32px;
+    width: 45px;
+    height: 60px;
+    bottom: -82px;
+    top: auto;
   }
   .swiper_padding_wrapper .swiper-button-next {
-    right: 9px;
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -526px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -304px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2384,23 +2392,26 @@ input.wt.error, textarea.wt.error {
      *
      * Set to `1` to turn on support.
      */
+    right: auto;
+    left: 53%;
   }
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   .swiper_padding_wrapper .swiper-button-next {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -526px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -304px;
   }
 }
 @media screen and (max-width: 767px) {
   .swiper_padding_wrapper .swiper-button-prev {
-    left: 9px;
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -688px;
+    left: auto;
+    right: 53%;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -242px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2413,12 +2424,12 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   .swiper_padding_wrapper .swiper-button-prev {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -688px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -242px;
   }
 }
 
@@ -2432,7 +2443,7 @@ input.wt.error, textarea.wt.error {
   }
 
   .swiper_padding_wrapper2 {
-    margin: 0 10px;
+    display: none;
   }
 
   .top_ball {
@@ -2476,6 +2487,7 @@ input.wt.error, textarea.wt.error {
   .about_slide .about_menu {
     left: 10px;
     padding-top: 10px;
+    position: static;
   }
   .about_slide .about_text {
     width: 100%;
@@ -2518,8 +2530,8 @@ input.wt.error, textarea.wt.error {
     width: 18px;
     height: 32px;
     right: 8px;
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -526px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -650px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2532,12 +2544,12 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   .swiper_padding_wrapper.for_foto .swiper-button-next {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -526px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -650px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2545,8 +2557,8 @@ input.wt.error, textarea.wt.error {
     width: 18px;
     height: 32px;
     left: 9px;
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -688px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -812px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2559,12 +2571,12 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   .swiper_padding_wrapper.for_foto .swiper-button-prev {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -688px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -812px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2793,8 +2805,8 @@ input.wt.error, textarea.wt.error {
   }
 
   .next-resp {
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -526px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -650px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2807,19 +2819,19 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   .next-resp {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -526px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -650px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .prev-resp {
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -688px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -812px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2832,12 +2844,12 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-resolution: 144dpi) {
   .prev-resp {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -688px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -812px;
   }
 }
 
@@ -2896,6 +2908,68 @@ input.wt.error, textarea.wt.error {
     font-weight: bold;
     padding-top: 6px;
   }
+
+  .direction_slide {
+    display: none;
+  }
+
+  .directions_slide_mobile {
+    height: 338px;
+    background: url(../images/oparations.png) 100% 100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .directions_slide_mobile .info_op {
+    font-size: 18px;
+    line-height: 21px;
+    position: absolute;
+    color: #fff;
+    text-shadow: 0px 0px 2px rgba(242, 216, 167, 0.5);
+    z-index: 11;
+  }
+  .directions_slide_mobile .info_op.pos1 {
+    left: 8%;
+    top: 37px;
+  }
+  .directions_slide_mobile .info_op.pos2 {
+    right: 8%;
+    top: 78px;
+  }
+  .directions_slide_mobile .info_op.pos3 {
+    left: 26%;
+    top: 245px;
+  }
+  .directions_slide_mobile img {
+    width: 320px;
+    height: 397px;
+    bottom: 0px;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+  }
+  .directions_slide_mobile .txt_wrapper {
+    position: absolute;
+    bottom: -31px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 11;
+  }
+  .directions_slide_mobile .txt {
+    background-color: #293643;
+    color: #fff;
+    font-family: 'Cam';
+    padding: 22px 20px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  #fotoLoader {
+    padding-bottom: 103px;
+  }
 }
 @media screen and (max-width: 767px) {
   .m_kahr {
@@ -2929,8 +3003,8 @@ input.wt.error, textarea.wt.error {
   .logo, .inner_page .logo {
     width: 110px;
     height: 38px;
-    background-image: url('../images/sprites/icons-s2b164d33e3.png');
-    background-position: 0 -354px;
+    background-image: url('../images/sprites/icons-seaeec114b8.png');
+    background-position: 0 -478px;
     background-repeat: repeat-y;
     /**
      * Option variable to turn on/off IE8 support.
@@ -2949,12 +3023,12 @@ input.wt.error, textarea.wt.error {
 }
 @media screen and (min-width: 768px) and (max-width: 1179px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 768px) and (max-width: 1179px) and (min--moz-device-pixel-ratio: 1.5), screen and (min-width: 768px) and (max-width: 1179px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 768px) and (max-width: 1179px) and (min-device-pixel-ratio: 1.5), screen and (min-width: 768px) and (max-width: 1179px) and (min-resolution: 144dpi) {
   .logo, .inner_page .logo {
-    background-image: url('../images/sprites-retina/icons-s0b5ac2799f.png');
-    -moz-background-size: 219px 801px;
-    -o-background-size: 219px 801px;
-    -webkit-background-size: 219px 801px;
-    background-size: 219px 801px;
-    background-position: 0 -354px;
+    background-image: url('../images/sprites-retina/icons-sdc072336cc.png');
+    -moz-background-size: 219px 925px;
+    -o-background-size: 219px 925px;
+    -webkit-background-size: 219px 925px;
+    background-size: 219px 925px;
+    background-position: 0 -478px;
   }
 }
 
