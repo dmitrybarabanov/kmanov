@@ -1,13 +1,14 @@
-var mobileWidth = 768;
+var mobileWidth = 767;
 var is_mobile = false;
 var file_input_count = 1;
 var window_width = 320;
+var main_page = false;
 
 
 var sis_height = 0; /*---------------------*/
 var systers_padding_top = 135; //отсуп от верха для сестер
 var minFirst_section_height = 530; //минимальная высота сестер
-var maxFirst_section_height = 910; //минимальная высота сестер
+var maxFirst_section_height = 910; //максимальная высота сестер
 var women_height = 810; //высота тетки в конце первого слайда
 var max_main_section_height = 1861;
 
@@ -263,6 +264,13 @@ function _sisters_init() /*--------------------*/
 	{
 		var h = $(window).height();
 		
+		//ipad hack
+		if ($(window).width()==768)
+		{
+			maxFirst_section_height = 690;
+		}
+		
+		
 		var sisHeight =  h-systers_padding_top - $(".about_k").height()+120;
 		
 		if (sisHeight<minFirst_section_height) /*минимальная высота*/
@@ -322,6 +330,7 @@ function _init_main_page_scroll()
 			$(document).on('scroll', function() {
 				var about_k_height = $(".about_k").height();
 				var h = $(".first_slide").height() - sis_height - systers_padding_top - 10;
+				h=  h*0.3;
 				
 				var scrollTop = $(window).scrollTop(),
 					dist = parseInt(scrollTop * amp);
@@ -339,20 +348,28 @@ function _init_main_page_scroll()
 		$(document).on('scroll', function() {
 			var h = 190;
 			var dist = $(window).scrollTop();
-			console.log(dist+" length "+$(".mobile_header").length);
 			
 			
-			
-				
-			if (dist>h )
+			if (main_page == true)
 			{
-				$(".mobile_header").removeClass("small");
-				console.log("1");
+				if (dist>h )
+				{
+					$(".mobile_header").removeClass("small");
+				}
+				else if ($(".mobile_header").hasClass("small") == false)
+				{
+					$(".mobile_header").addClass("small");
+				}
+			
 			}
-			else if ($(".mobile_header").hasClass("small") == false)
+			else
 			{
-				$(".mobile_header").addClass("small");
-				console.log("2");
+				
+				if ($(".mobile_header").hasClass("small") == false)
+				{
+					$(".mobile_header").addClass("small");
+				}
+				
 			}
 				
 			

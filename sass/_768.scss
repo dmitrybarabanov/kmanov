@@ -4,6 +4,9 @@ $icons-sprite-dimensions: true;
 
 @media screen and (min-width: 768px) and (max-width: 1179px) {
 	
+	nav ul li.last {padding-right: 10px;}
+	
+	
 	body, html {
 	  font-size: 14px;
 	  line-height: 17px;
@@ -26,8 +29,8 @@ $icons-sprite-dimensions: true;
 			@include retina-sprite(logom);
 			display: block;
 			
-			left: 17px;
-			top: 108px;
+			left: 78px;
+			top: 65px;
 			z-index:1002;
 			@include opacity(1);
 		}
@@ -95,6 +98,7 @@ $icons-sprite-dimensions: true;
 			padding-top: 20px;
 			overflow: hidden;
 			padding-bottom: 20px;
+			
 			
 			span { display: block;
 				text-align: right;
@@ -370,6 +374,11 @@ $icons-sprite-dimensions: true;
 		}
 		
 	}
+
+
+	.blog_slide.inner_page_wrapper { border-top: 0px;}
+	
+	
 	
 
 	

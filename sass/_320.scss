@@ -1,6 +1,8 @@
 $icons-sprite-dimensions: true;
 @import "retina";
 
+
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -149,11 +151,12 @@ $icons-sprite-dimensions: true;
 			position: relative;
 			
 			height: auto;
-			padding: 0 10px;
+			padding: 0px;
 			
 			.left_info, .right_info { width: 100%; float: none; text-align: center;}
 			
-			.left_info {font-size: 14px;     position: absolute;
+			.left_info {
+				    font-size: 14px;     position: absolute;
 				    bottom: 85px;
 					color: #fff;
 					}
@@ -316,7 +319,7 @@ $icons-sprite-dimensions: true;
 	
 	.second_slide {
 		height: auto;
-		padding-bottom: 30px;
+		padding-bottom: 0px;
 		
 		.width_wrapper{
 			padding: 0 20px;
@@ -582,8 +585,9 @@ $icons-sprite-dimensions: true;
 
 
 .swiper_padding_wrapper.for_foto { 
-    margin: 0 -10px 0 -10px;
-	.swiper-slide { margin-top: 0px;}
+    margin: 0;
+	.swiper-slide { margin-top: 10px;}
+	.swiper-slide.swiper-slide-active { margin-top: 0px;}
 
 		/*.swiper-button-next, .swiper-button-prev{
 			width: 45px;
@@ -649,7 +653,7 @@ h2.subttl {
 .blog_slide
 {
 	height: auto;
-	border-top: solid 114px #1c2329;
+	/*border-top: solid 114px #1c2329;*/
 	
 	.blog_width_wrapper {
 		background: url(../images/bg_blog_mobile.jpg) 100% 100% no-repeat;
@@ -716,9 +720,9 @@ h2.subttl {
 				
 				a {
 					
-					font-size: 20px;
-					line-height: 23px;
-					margin-bottom: 10px;
+					font-size: 18px;
+					line-height: 20px;
+					margin-bottom: 0px;
 					display: inline-block;
 					
 					
@@ -732,7 +736,7 @@ h2.subttl {
 			
 			p { line-height: 16px;}
 		}
-	}
+}
 	
 	.swiper_padding_wrapper.for_blog
 	{
@@ -1012,31 +1016,49 @@ h2.subttl {
 }
 
 
+#foto-slider{ margin:0 -10px 0 -10px;}
+
 .swiper-container.gallery-foto {
 	height: 162px;
 }
 
 .only_desktop{ display: none;}
 
-#response_slider 
+#response_slider.swiper-container.gallery-foto
 {
-	/*
+	height: 162px;
+	background-color:#1c2329;
 	.swiper-slide { margin-top: 10px;}
 	.swiper-slide.swiper-slide-active { margin-top: 0px;}
-	*/
+	
+	
+}
+
+.width_wrapper.for_bg{
+	background-color: #f0f000;
+	
+	
+	
+	background: url(../images/bg_resp.png) 100% 100% no-repeat;
+	background-size: cover;
+	text-align: center;
+	
+	padding:0 0 114px 0;
+	
+	h2.subttl { background-color: transparent; margin: 0px;}
+	
 }
 
 
-
 }
-
 
 @media screen and (max-width: 479px) {
 	.about_k .left_info .m_kahr  {
 		 display: none;
-		
-		
 	}
+	
+	.about_k .right_info { height: 210px;}
+	
 	.about_k p.dot { padding-right: 10px; text-align: right;
 		&:before { display: none;}
 	}
@@ -1044,8 +1066,23 @@ h2.subttl {
 	.about_k .left_info h1 {
 		padding-top: 20px;
 	}
-}
+	
+	.foto_slide, .about_slide {
+		.foto_menu, .about_menu {
+		
+		
+			.fitem { padding-right: 10px;
+			}
+		
+			
+			.fitem.empty { display: none;}
+		}
+	}
 
+
+
+	
+}
 
 
 
