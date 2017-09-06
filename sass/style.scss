@@ -48,8 +48,8 @@ h1 {
 
 h2 { 
 	font-family: 'Cam';
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 24px;
+	line-height: 24px;
 	padding: 0;
 	margin-top: 0px;
 }
@@ -81,8 +81,8 @@ input, textarea {
 }
 
 @mixin beige_header {
-  font-size: 30px;
-  line-height:30px;
+  font-size: 24px;
+  line-height:24px;
   color:#f2d8a7;
   font-family: 'Cam';
 }
@@ -429,13 +429,13 @@ p.dot {
 	background: url(../images/bg_foto_slide.jpg) no-repeat;
 	background-position: top center;
 	/*height: 1050px;*/
-	padding-bottom: 192px;
+	padding-bottom: 182px;
 }
 
 .foto_slide, .about_slide {
 	
 	.foto_menu, .about_menu {
-		padding: 71px 0 0 0; /*91px*/
+		padding: 77px 0 0 0; /*91px*/
 		overflow: hidden;
 		
 		h2 {
@@ -444,6 +444,7 @@ p.dot {
 			width: 302px;
 			margin-right: 130px;
 			float: left;
+			margin-top: 5px;
 		}
 		
 		.fitem { float: left;
@@ -492,7 +493,7 @@ p.dot {
 		
 		text-align: center;
 		/*padding: 65px 0 46px 0;*/
-		padding: 35px 0 26px 0;
+		padding: 40px 0 29px 0;
 		.item {width:auto; /*230px;*/  display: inline-block; margin: 0 45px;
 			text-align: left;
 			vertical-align: top;
@@ -506,9 +507,11 @@ p.dot {
 			/*text-align: right;*/
 		}
 		
-		a { @include font16;
+		a { @include font14;
 			@include shadow_white;
 			color:#fff;
+			display: inline-block;
+			line-height: 17px;
 			
 			
 			&:hover { color:#f2d8a7; @include shadow_beidge;} 
@@ -532,7 +535,7 @@ p.dot {
 }
 
 .swiper_padding_wrapper { 
-	margin: 0 35px;
+	margin: 0 80px;
 	position: relative;
 	
 	
@@ -540,15 +543,18 @@ p.dot {
 	.left_blur_image, .right_blur_image {
 		height: 479px; /*579*/
 		width: 100%;
+		height: 228px;
 		position: absolute;
-		top: 37px;
+		top: 0px;
 		left: -95%;
 		text-align: right;
 		overflow: hidden;
 		
+
 		img 
 		{
 			height:100%;
+			width: 100%;
 			 -webkit-filter: blur(3px);
 			-moz-filter: blur(3px);
 			filter: blur(3px);
@@ -573,25 +579,25 @@ p.dot {
 	
 	.swiper-button-next, .swiper-button-prev {
 		background-size: auto;
-		margin-top: -77px;
-		width: 36px;
-		height: 64px;
+		margin-top: -43px;
+		width: 25px;
+		height: 44px;
 	}
 	
 	.swiper-button-next {
-		right: -59px;
+		right: -38px;
 		@include retina-sprite(next);
 	}
 
 	.swiper-button-prev {
-		left: -58px;
+		left: -38px;
 		@include retina-sprite(prev);
 	}
 }
 
 .swiper_padding_wrapper2
 {
-	margin: 0 24px;
+	margin: 0 -16px;
 }
 
 	.swiper-container {
@@ -609,10 +615,10 @@ p.dot {
         width: 100%;
     }
     .gallery-thumbs {
-        height: 147px;
+        height: 117px;
         box-sizing: border-box;
         padding: 0;
-		margin-top: -39px;
+		margin-top: -27px;
     }
     .gallery-thumbs .swiper-slide {
         width: 20%;
@@ -642,32 +648,35 @@ p.dot {
     }
 
 .about_slide{
-	height: 1396px;
+	height: auto;
+	padding-bottom: 131px;
 }
 
-.about_slide2 {height: 754px;}
+.about_slide2 {height: 764px;}
 
 
 .about_slide2
 {
+	
+	/*bg_kahram_new.png*/
 	width: 100%;
 	overflow: hidden;
 	position: absolute;
 	left: 0px;
-	top: -162px;
+	top: -130px;
 	
 	.about_foto2 {
-		height: 714px;
+		background: url(../images/bg_kahram_new.png) no-repeat;
+		background-position: top left;
+		height: 764px;
 		width: 1000px;
 		position:absolute;
 		z-index: 6;
-		left: 672px;
-		
-		background: url(../images/bg_kahram.png) no-repeat;
-		background-position: top left;
+		left: 702px;
 	}
 	
 	.about_foto {
+		display: none;
 		height: 754px;
 		width: 1000px;
 		position:absolute;
@@ -684,8 +693,8 @@ p.dot {
 			background: rgba(41,54,67, 0.9);
 			position: absolute;
 			z-index:10;
-			left: -11px;
-			bottom: 74px;
+			left: -9px;
+			bottom: 179px;
 			color: #dec79b;
 			border: solid 1px #dec79b;
 			padding: 27px 18px 27px 34px;
@@ -717,14 +726,14 @@ p.dot {
 	}
 	
 	.about_text {
-		width: 625px;
-		height: 530px;
+		width: 658px;
+		height: 520px;
 		overflow: hidden;
 		float: left;
 		color: #293643;
 		
 		.about_text_wrapper {
-			padding: 68px 0 0 36px;
+			padding: 51px 0 0 36px;
 			display: none;
 			
 			&.selected {
@@ -733,6 +742,8 @@ p.dot {
 		}
 		
 		h2 {
+			font-size: 24px;
+			line-height: 36px;
 			text-align: right;
 			font-weight: bold;
 		}
@@ -746,10 +757,10 @@ p.dot {
 		
 		span {
 			display: block;
-			font-size: 30px;
-			line-height: 30px;
+			font-size: 24px;
+			line-height: 24px;
 			text-align: right;
-			padding-bottom: 44px;
+			padding-bottom: 35px;
 		}
 		
 		.attention {
@@ -766,11 +777,11 @@ p.dot {
 h2.subttl {
 	
 	@include shadow_beidge;
-	span { font-size: 24px; position: relative;
+	span { font-size: 18px; position: relative;
 		a.btn1 {
 			position: absolute;
-			left: 12px;
-			top: -6px;
+			left: 58px;
+			top: -13px;
 		}
 	
 	}
@@ -779,7 +790,7 @@ h2.subttl {
 	color:#f2d8a7;
 	text-align: center;
 	
-	margin: 110px 0 42px 0;
+	margin: 95px 0 42px 0;
 	
 	
 	
@@ -804,27 +815,27 @@ a.btn1 {
 
 
 .swiper_padding_wrapper.for_foto { 
-	margin: 0 0px;
+	margin: 0 25px;
 	position: relative;
 	clear: both;
 	
 	
 	.swiper-button-next {
-		width: 36px;
+		/*width: 36px;
 		height: 64px;
-		right: -59px;
+		right: -59px;*/
 		@include retina-sprite(next); 
 	}
 
 	.swiper-button-prev {
-		width: 36px;
-		height: 64px;
-		left: -58px;
+		/*width: 25px;
+		height: 44px;
+		left: -58px;*/
 		@include retina-sprite(prev);
 	}
 	
 	.swiper-button-next, .swiper-button-prev {
-		margin-top: -34px;
+		margin-top: -22px;
 	}
 	
 }
@@ -832,7 +843,7 @@ a.btn1 {
 
 .swiper-container.diplom-foto{
 	width: 100%;
-    height: 205px; /*244*/
+    height: 167px;
 	z-index:10;
 	
 	.swiper-slide {
@@ -852,15 +863,21 @@ a.btn1 {
         -webkit-box-align: center;
         -ms-flex-align: center;
         -webkit-align-items: center;
+		margin-top: 21px;
         align-items: center;
+		@include transition(all 0.2s ease-in-out);
+		
+		a {height: 100%; display: inline-block;}
 	}
 	
+	.swiper-slide:hover {
+		margin-top: 0px;
+	}
 }
-
 
 	.swiper-container.gallery-foto {
         width: 100%;
-        height: 244px;
+        height: 167px;
         margin: 0px auto;
 		z-index: 10;
 		
@@ -869,7 +886,7 @@ a.btn1 {
 			text-align: center;
 			font-size: 18px;
 			background: none;
-			width: 333px;
+			width: 226px;
 			/* Center slide text vertically */
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -900,15 +917,19 @@ bg_blog
 
 .blog_slide
 {
-	height: 705px;
+	height: 529px;
 	background: url(../images/bg_blog.jpg) no-repeat;
-	background-position: bottom center;
+	
+	
+	
+	
+	background-position: top center;
 	position: relative;
 	
 	.blog_width_wrapper {
 		
 		position: absolute;
-		top: -51px;
+		top: -43px;
 		left: 0px;
 		width: 100%;
 		text-align:center;
@@ -918,7 +939,7 @@ bg_blog
 	
 		h2 {
 			color:#f9dfae;
-			margin: 49px 0 45px 0;
+			margin: 39px 0 45px 0;
 			@include shadow_beidge;
 		}
 		
@@ -929,13 +950,14 @@ bg_blog
 	.swiper_padding_wrapper.for_blog
 	{
 		margin: 0 auto;
-		width: 818px;
+		width: 734px;
 		
 		.swiper-button-next.resp, .swiper-button-prev.resp {margin-top: -34px;}
 	}
 	
 	#blog_slider{
-		height: 580px;
+		height: 445px;
+		padding-bottom: 39px;
 		
 		.swiper-wrapper {
 			.swiper-slide {
@@ -949,17 +971,20 @@ bg_blog
 		
 		
 		.spacer {
-			height: 20px;
+			height: 12px;
 			font-size: 1px;
 		}
 		
 		.blog_link {
-			width: 180px;/*220px;*/
+			width: 128px;/*220px;*/
 			a {
-				width: 180px;
-				height: 180px;
+				width: 128px;
+				height: 128px;
 				display: inline-block;
 				float: left;
+				background-size: cover;
+				background-position: center;
+				
 			}
 		}
 		.blog_txt {
@@ -970,10 +995,10 @@ bg_blog
 				
 				a {
 					font-family: 'Cam';
-					font-size: 24px;
-					line-height: 28px;
+					font-size: 16px;
+					line-height: 18px;
 					text-transform: uppercase;
-					margin-bottom: 20px;
+					margin-bottom: 0px;
 					display: inline-block;
 					
 					
@@ -1366,6 +1391,11 @@ br.clear{ clear: both;}
 	}
 }
 
+.swiper_padding_wrapper {
+	.swiper-button-prev.blog { left: -54px;}
+	.swiper-button-next.blog { right: -54px;}
+}
+
 
 .modal_content_wrapper {
 	border-left: solid 5px #2d2e2f;
@@ -1595,9 +1625,9 @@ input.wt.error, textarea.wt.error { border: solid 2px #c8231e; color: #c8231e;}
 
 	.next-resp, .prev-resp{
 		background-size: auto;
-		margin-top: -32px;
-		width: 36px;
-		height: 64px;
+		margin-top: -22px;
+		width: 26px;
+		height: 44px;
 		top: 50%;
 		position: absolute;
 	}

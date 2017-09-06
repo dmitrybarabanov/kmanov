@@ -30,6 +30,9 @@
 	<link rel="stylesheet" media="screen" href="files/css/jquery.fancybox.min.css" >
 	<script src="files/js/jquery.fancybox.min.js"></script>
 	
+	
+	<script src="files/js/autoViewport.js"></script>
+	
 	<script src="files/js/variables.js"></script>
 	<script src="files/js/init.js"></script>
 	
@@ -304,7 +307,11 @@
 						//.gallery-top
 						//console.log($(".gallery-top .swiper-slide-active").data("num")-1);
 						
-						
+						if ($("#fotoLoader .swiper-container").length)
+						{
+							$(".left_blur_image").height($("#fotoLoader .swiper-container").height()+"px");
+							$(".right_blur_image").height($("#fotoLoader .swiper-container").height()+"px");
+						}
 					
 						ChangeLeftImage($(".gallery-top .swiper-slide-active").data("num"));
 						ChangeRightImage($(".gallery-top .swiper-slide-active").data("num"));

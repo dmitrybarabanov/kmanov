@@ -37,7 +37,23 @@ jQuery(document).ready(function( $ ) {
 	
 	_init_forms();/*!!!!*/
 	_init_responses();
+	_init_320();
 });
+
+
+
+
+
+
+
+
+function _init_320()
+{
+	var width = getDisplayWidth();
+	if (width<480)
+		AutoViewport.setDimensions(480, 400);
+	
+}
 
 
 function _init_responses()
@@ -54,7 +70,6 @@ function _init_responses()
 		current_response--;
 		current_response = (current_response+indexes.length)%indexes.length;
 		//loadresponse(indexes[current_response]);
-		console.log(current_response+" "+indexes[current_response])
 	});
 	
 	
@@ -222,7 +237,7 @@ function _init_diplom_slider()
 					prevButton: '#diplom-slider .swiper-button-prev',
 					slidesPerView: 'auto',
 					loop: true,
-					spaceBetween: 31,
+					spaceBetween: 0,
 					centeredSlides: true,
 					paginationClickable: true
 				});
@@ -408,6 +423,15 @@ function _default_init() /*------------------*/
 	if( scrolled <= top_menu_position_hide ) {     
 		$('.for_mobile_wrapper').removeClass('fix'); 
 	}
+	
+	
+	if ($("#fotoLoader .swiper-container").length)
+	{
+		$(".left_blur_image").height($("#fotoLoader .swiper-container").height()+"px");
+		$(".right_blur_image").height($("#fotoLoader .swiper-container").height()+"px");
+	}
+	
+	
 }
 
 
