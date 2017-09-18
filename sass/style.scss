@@ -125,12 +125,12 @@ input, textarea {
 .main_section {
 	overflow: hidden;
 	
-	background: url(../images/bg_main21.jpg) no-repeat;
+	/*background: url(../images/bg_main21.jpg) no-repeat;*/
+	background: url(../images/bg_main_3.jpg) no-repeat;
 	background-position: bottom center;
 }
 
 .sisters {
-
 	width: 100%;
 	position: absolute;
 	top: 135px;
@@ -141,7 +141,6 @@ input, textarea {
 	background: url(../images/bg_3sisters2.png)  no-repeat;
 	background-size: auto 100%;
 	background-position: top center;
-	
 }
 
 /*bg_3sisters*/
@@ -156,7 +155,7 @@ input, textarea {
 .first_slide {
 	/*height: 1235px;*/
 	
-	    height: 1097px;
+	height: 1097px;
 	
 	position: relative;	
 }
@@ -312,8 +311,8 @@ nav {
 }
 
 .about_k {
-	background: url(../images/bg_krahmanov.png) no-repeat;
-	height: 303px;
+	background: url(../images/bg_krahmanov2.png) no-repeat;
+	height: 279px;
 	width: 100%;
 	position: absolute;
 	z-index: 10;
@@ -321,41 +320,47 @@ nav {
 	left: 0px;
 	
 	.left_info {
-		width: 556px;
+		margin-left: 30px;
+		width: 442px;
 		float: left;
 		text-align: right;
 		color: #f2d8a7;
-		padding-top: 49px;
+		padding-top: 78px;
 		min-height: 286px;
 		
 		
 		h1{ 
+			font-size: 24px;
+			line-height: 30px;
 			text-transform: uppercase;
 			letter-spacing: -0.1px;
 		}
 		
 		span {
 			font-family: 'OpenSans-Semibold';
-			padding-bottom: 19px;
+			padding-bottom: 14px;
 			display: inline-block;
 		}
 		
-		p { color: #fff;}
+		p { color: #fff;
+			font-size: 16px;
+			line-height: 16px;
+		}
 		
 	}
 	
 	.right_info {
 		color: #263340;
 		float: right;
-		width: 372px;
+		width: 480px;
 		height: 100%;
 		
 		.ttl {
-			padding-bottom: 21px;
-			padding-top: 30px;
+			padding-bottom: 12px;
+			padding-top: 35px;
 		}
 		
-		p { @include font14; }
+		p { @include font16; font-weight: bold; }
 		a { @include font14; font-family: 'Cam'; }
 		
 		
@@ -379,40 +384,48 @@ p.dot {
 	float: right;
     clear: right;
 	position: relative;
-	padding-bottom: 4px;
+	padding-bottom: 7px;
 	
-	&:before{
-		position: absolute;
-		content: "\2022";
-		left: -15px;
-		top: 0px;
+	
+	span {
+		 
+		display: inline-block;
+		width: 1px;
+		height: 16px;
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "\2022";
+			left: -16px;
+			top: 0px;
+		}
 	}
 }
 
 
 .direction_slide {
-	height: 622px;
+	height: 650px;
 	overflow:hidden;
 	
 	.info_text {
-		margin-top: 160px;
-		width: 644px;
-		margin-right: 73px;
+		margin-top: 134px;
+		width: 600px;
+		margin-right: 0px;
 		float: right;
 		
 		h2 {
 			font-family: 'Cam';
-			font-size: 30px;
-			line-height: 30px;
+			font-size: 24px;
+			line-height: 24px;
 			background-color:#293643;
 			color: #fff;
-			padding: 25px 16px 22px 60px;
-			margin-bottom: 49px;
+			padding: 18px 16px 19px 60px;
+			margin-bottom: 42px;
 		}
 		
 		p { 
 			text-align: justify;
-			padding: 0 80px 31px 60px; 
+			padding: 0 80px 29px 36px; 
 			color:#263340;
 			@include font16;
 			
@@ -426,9 +439,9 @@ p.dot {
 
 .second_slide
 {
-	background: url(../images/bg_foto_slide.jpg) no-repeat;
-	background-position: top center;
-	/*height: 1050px;*/
+	background: url(../images/bg_foto_slide.jpg) 100% 100% no-repeat;
+	background-size: cover;
+    background-position: center;
 	padding-bottom: 182px;
 }
 
@@ -902,6 +915,12 @@ a.btn1 {
 			align-items: center;
 			margin-top: 21px;
 			@include transition(all 0.2s ease-in-out);
+			
+			a {
+				width: 226px;
+				height: 167px;
+				display: block;
+			}
 		}
 		
 		/*.swiper-slide.swiper-slide-active, */.swiper-slide:hover {
@@ -1017,21 +1036,21 @@ bg_blog
 
 footer {
 	color: #ffffff;
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 19px;
 	
 	a:hover{ color:#f2d8a7;}
 	
 	.blue { background-color:#293643;}
 	
-	.blue { overflow: hidden; height: 350px;}
+	.blue { overflow: hidden; height: 261px;}
 	
 	.col1, .col2{
 		float: left;
 		
 	}
 	.col1 {
-		width: 352px;
+		width: 340px;
 	}
 	
 	.col2 {
@@ -1048,11 +1067,11 @@ footer {
 		height: 74px;
 		display: block;
 		@include retina-sprite(flogo);
-		margin-top: 44px;
+		margin-top: 27px;
 	}
 	
 	.hspacer {
-		height: 173px;
+		height: 131px;
 		display: block;
 		overflow: hidden;
 	}
@@ -1062,7 +1081,7 @@ footer {
 		color:#f2d8a7;
 		font-weight: bold;
 		line-height: 22px;
-		.p_top {padding: 77px 0 0 0;}
+		.p_top {padding: 57px 0 0 0;}
 	}
 	
 	.hspacer.social
@@ -1070,7 +1089,7 @@ footer {
 		@include shadow_beidge;
 		color:#f2d8a7;
 		
-		.p_top {padding: 72px 0 0 0;}
+		.p_top {padding: 57px 0 0 0;}
 		
 	}
 	
@@ -1079,41 +1098,41 @@ footer {
 		height: 32px;
 		display: block;
 		float: left;
-		margin: 13px 15px 0 0;
+		margin: 7px 15px 0 0;
 	}
 	a.soc.insta {@include retina-sprite(insta);}
 	a.soc.vk {@include retina-sprite(vk);}
 	
 	
-	.beige_footer { background-color:#f2d8a7; height: 99px;
+	.beige_footer { background-color:#f2d8a7; height: 62px;
 		font-size: 14px;
 		color: #191919;
 	
 		.left_info { 
 			width:50%;
 			float: left;
-			padding-top: 40px;
+			padding-top: 22px;
 		}
 		
 		
 		.right_info { 
 			width:50%;
 			float: right;
-			padding-top: 40px;
-			font-size: 16px;
+			padding-top: 22px;
+			font-size: 14px;
 			text-align: right;
 			
 			div {
-				padding-right: 199px;
+				padding-right: 122px;
 				display: inline-block;
 				position: relative;
 				
 				a {
 					position: absolute;
-					top: -14px;
+					top: -3px;
 					right: 0px;
-					width:169px;
-					height:45px;
+					width:109px;
+					height:29px;
 					@include retina-sprite(tka);
 				}
 			}
@@ -1130,6 +1149,8 @@ footer {
 	
 }
 
+.for_mobile_wrapper  { position: relative;}
+
 .common_header {
 	height: 222px;
 	/*background: url(../images/bg_second.jpg) no-repeat;*/
@@ -1141,6 +1162,7 @@ footer {
 
 .common_center {
 	width:100%;
+	padding-bottom: 20px;
 	background:#f3f3f3 url(../images/bg_second.jpg) no-repeat;
 	
 	.width_wrapper {
@@ -1303,7 +1325,7 @@ footer {
 	
 	.blog_slide
 	{
-		height: 705px;
+		height: 544px;
 		background: url(../images/bg_blog3.jpg) no-repeat;
 	}
 	
@@ -1648,7 +1670,7 @@ input.wt.error, textarea.wt.error { border: solid 2px #c8231e; color: #c8231e;}
 	/*width: 100%;
 	height: 100%;
 	position: absolute;*/
-	z-index: 11px;
+	z-index: 11;
 	
 	img { width: 100%;}
 	

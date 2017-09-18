@@ -34,54 +34,132 @@ $icons-sprite-dimensions: true;
 			z-index:1002;
 			@include opacity(1);
 		}
-	.inner_page .logo {top: 88px;}
+	.inner_page .logo {
+		top: 73px;
+		left: 38px;
+	}
 	
 	.common_header {height: 182px; }
 	
 	.inner_page .blog_slide { height: auto;}
+	
+	.main_section { 
+		background-position: -996px bottom;
+	}
 
 
 
-	footer
-	{
+	footer {
+		
+		.n_contacts {
+			color: #f2d8a7;
+			padding-bottom: 17px;
+		}
+		
+		
 		.blue {
-
-			height: 276px;
-		}
-
-		.hspacer {height: 130px;}
-		.width_wrapper {
-			width: 748px;
+			height: auto;
+			padding-bottom: 65px;
+			
+			background: url(../images/bg_footer_blue.jpg) 100% 100% no-repeat;
+			background-size: cover;
+			text-align: center;
+			
+			
 		}
 		
-		.col1, .col2, .col3 {
+		.col1  {
+			width: 100%;
+			text-align: center;
+			float: none;
+			
+			.hspacer { padding: 40px 0 12px 0; height: auto;}
+			.flogo { margin: 0px; float: none; margin: 0 auto;}
+			a { display: none;}
+		}
+		
+		.col2, .col3  {
+			width: auto;
+			padding: 0 10px;
+			line-height: 20px;
 			font-size: 14px;
-			line-height: 17px;
+			float: none;
+			text-align: center;
 		}
 		
-		.col1 {
-			width: 226px;
-		}
-		
-		.col2 {
-			width: 344px;
-		}
-		
-		.col3 {
-			width: 170px;
-		}
-		
-		.hspacer.social, .hspacer.record
-		{
-			.p_top	{
-				padding: 48px 0 0 0;
+		.hspacer.record {
+			height: auto;
+			line-height: 16px;
+			font-size: 16px;
+			
+			span {
+				line-height: 24px;
+				font-size: 24px;	
+				padding: 5px 0 28px 0;
+				display: inline-block;
+			}
+			
+			.p_top {
+				padding: 15px 0 15px 0;
 			}
 		}
 		
+		.col3 {
+			padding: 10px 0 34px 0;
+			.hspacer { height: auto;}
+			
+			.hspacer.social {
+				text-align: center;
+				font-size: 16px;
+				.p_top {
+					padding: 35px 0 11px 0;
+					margin: 0 auto;
+				}
+				
+				.soc_outer { overflow: hidden; margin: 0 auto;    display: inline-block;}
+			}
+		}
 		
-		.flogo {	margin-top: 20px;}
+		.beige_footer {
+			
+			position: relative;
+			
+			height: auto;
+			padding: 0px;
+			
+			.width_wrapper {position: relative;}
+			
+			.left_info, .right_info { width: 100%; float: none; text-align: center;}
+			
+			.left_info {
+					
+				    font-size: 14px;     position: absolute;
+				    bottom: 85px;
+					color: #fff;
+					}
+			.right_info {  padding: 23px 0 20px 0; 
+			
+					
+			
+			
+			
+				text-align: center;
+				div { font-size: 14px;}
+			}
+			
+		}
 		
-		.beige_footer .right_info { font-size: 14px;}
+		a.soc {
+			width: 42px;
+			height: 42px;
+			display: inline-block;
+			float: none;
+			margin: 20px 15px 0 15px;
+		}
+		
+		a.soc.insta {@include retina-sprite(insta2);}
+		a.soc.vk {@include retina-sprite(vk2); width: 53px;}
+		
 		
 		
 	}
@@ -92,12 +170,18 @@ $icons-sprite-dimensions: true;
 		/*background: rgba(41,54,67, 0.9);*/
 		height: auto;
 		
+		width: 673px;
+		background-position: top left;
+		margin-left: 36px;
+		
 		.left_info {
 			float: none;
-			width: 100%;
-			padding-top: 20px;
+			width: 452px;
+			padding-top: 81px;
 			overflow: hidden;
 			padding-bottom: 20px;
+			margin-left: 10px;
+			text-align: right;
 			
 			
 			span { display: block;
@@ -109,7 +193,26 @@ $icons-sprite-dimensions: true;
 				line-height: 28px;
 				padding-bottom: 0px;
 			}
+			
+			
+			p.dot { 
+				text-align: right;
+				float: right;
+				&:before { display: none;}
+				span {
+					padding: 0;	
+					display: inline-block;
+					width: 1px;
+					height: 16px;
+					position: relative;
+				}
+			}
+			
+			
 		}
+		
+		
+		
 		
 		.right_info {
 			display: none;
@@ -132,11 +235,14 @@ $icons-sprite-dimensions: true;
 	.direction_slide 
 	{
 		.info_text {
+			width: 556px;
 			margin-right: 10px;
-			margin-top: 60px;
+			margin-top:100px;
+			
+			h2 { margin-bottom: 28px;}
 
 			p {
-				    padding: 0 1px 31px 134px;
+				    padding: 0 1px 31px 86px;
 			}
 		}
 	}
@@ -173,6 +279,8 @@ $icons-sprite-dimensions: true;
 		}
 	}
 	
+	.top_ball { display: none;}
+	
 	.swiper_padding_wrapper {
 		.left_blur_image, .right_blur_image  {
 			height: 350px;
@@ -195,38 +303,76 @@ $icons-sprite-dimensions: true;
 	
 	.second_slide {
 		height: auto;
-		padding-bottom: 100px;
+		padding-bottom: 70px;
 	}
 	
 	
 	
+	.swiper-container.gallery-foto { height: 155px;}
 	
-	.about_slide { height: auto;
-		background: #eff1f3;
-		.width_wrapper { padding: 0 10px;}
+	
+	.about_slide { 
+		padding-bottom: 0px;
+		background:#eff1f3 url(../images/bg_resp2.jpg) no-repeat;
+		background-position: bottom center;
+		
+	
+		height: auto;
+		.width_wrapper.for_bg { 
+
+			padding: 0px 10px 54px 10px;
+			
+			background-size: cover;
+			text-align: center;
+		
+			h2.subttl { background-color: transparent; margin: 0px;
+				    padding: 43px 0 38px 0;
+			}
+		
+		}
 		
 		.about_menu {
-			left: 10px;
-			padding-top: 10px;
+			left: 80px;
+			padding-top: 30px;
+			top: 30px;
+			
+			.fitem.empty { display: block;}
+			.fitem { margin-right: 15px; margin-bottom: 5px; color: #1d242a;  }
+			.fitem a {@include shadow_universal(0px, rgba(0, 0, 0, 0));}
+			.fitem.selected  {
+				
+				&:before {
+					background-color:#1d242a;
+				}
+				
+				a {font-weight: bold; color: #1d242a; @include shadow_universal(0px, rgba(0, 0, 0, 0));}
+			}
+			
 		}
 		
 		.about_text {
 			width: 100%;
 			float: none;
 			height: auto;
+			padding-top: 100px;
+
 			
 			.about_text_wrapper {
 				padding: 0px;
 			}
 			
 			h2 {
-				padding: 20px 0 10px 0;
+				padding: 20px 0 0px 0;
+				text-align: center;
+				color: #293643;
 			}
 
 			span {
 				font-size: 20px;
 				line-height: 20px;
 				padding-bottom: 20px;
+				text-align: center;
+				color: #293643;
 			}
 			
 			.attention { padding-bottom: 20px;}
@@ -234,8 +380,7 @@ $icons-sprite-dimensions: true;
 			
 		}
 		
-		.fitem.empty { display: none;}
-		.fitem { margin-right: 15px; margin-bottom: 5px;}
+		
 
 	}
 
@@ -266,7 +411,7 @@ $icons-sprite-dimensions: true;
 		padding: 20px 0 20px 0;
 		
 		
-		span { font-size: 23px;
+		span { font-size: 18px;
 			line-height: 23px; position: relative;
 			display: inline-block;
 			padding-top: 10px;

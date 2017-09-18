@@ -85,6 +85,11 @@ $icons-sprite-dimensions: true;
 	
 	footer {
 		
+		.n_contacts {
+			color: #f2d8a7;
+			padding-bottom: 17px;
+		}
+		
 		.blue {
 			height: auto;
 			padding-bottom: 65px;
@@ -133,6 +138,7 @@ $icons-sprite-dimensions: true;
 		}
 		
 		.col3 {
+			padding: 10px 0 34px 0;
 			.hspacer { height: auto;}
 			
 			.hspacer.social {
@@ -156,6 +162,7 @@ $icons-sprite-dimensions: true;
 			.left_info, .right_info { width: 100%; float: none; text-align: center;}
 			
 			.left_info {
+					
 				    font-size: 14px;     position: absolute;
 				    bottom: 85px;
 					color: #fff;
@@ -208,6 +215,7 @@ $icons-sprite-dimensions: true;
 		height: auto;
 		
 		.left_info {
+			margin-left: 0px;
 			float: none;
 			width: 100%;
 			padding-top: 20px;
@@ -242,6 +250,26 @@ $icons-sprite-dimensions: true;
 				width: 100%;
 				padding-bottom: 38px;
 			}
+			
+			
+			
+			p.dot { 
+		
+		
+				&:before { display: none;}
+				span {
+					padding: 0;	
+					display: inline-block;
+					width: 1px;
+					height: 16px;
+					position: relative;
+					
+				}
+			}
+			
+			
+			
+			
 		}
 		
 		.right_info {
@@ -480,6 +508,7 @@ $icons-sprite-dimensions: true;
 
 
 .top_ball {
+	display: none;
 	left: 10px;
 	top: 10px;
 	
@@ -523,6 +552,7 @@ $icons-sprite-dimensions: true;
 
 
 .about_slide { height: auto;
+	padding-bottom: 0px;
 	background: #eff1f3;
 	.width_wrapper { padding: 0 10px;}
 	
@@ -758,6 +788,7 @@ h2.subttl {
 }
 
 .common_center {
+	
 	.width_wrapper{
 		padding: 20px 10px 0 10px;
 		
@@ -1052,6 +1083,7 @@ h2.subttl {
 
 }
 
+/*
 @media screen and (max-width: 479px) {
 	.about_k .left_info .m_kahr  {
 		 display: none;
@@ -1060,7 +1092,22 @@ h2.subttl {
 	.about_k .right_info { height: 210px;}
 	
 	.about_k p.dot { padding-right: 10px; text-align: right;
+		
+		
 		&:before { display: none;}
+		
+		
+		
+		span {
+			padding: 0;	
+			display: inline-block;
+			width: 1px;
+			height: 16px;
+			position: relative;
+			
+		}
+		
+		
 	}
 	
 	.about_k .left_info h1 {
@@ -1083,7 +1130,7 @@ h2.subttl {
 
 	
 }
-
+*/
 
 
 

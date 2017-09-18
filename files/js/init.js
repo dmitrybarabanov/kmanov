@@ -9,7 +9,7 @@ var sis_height = 0; /*---------------------*/
 var systers_padding_top = 135; //отсуп от верха для сестер
 var minFirst_section_height = 530; //минимальная высота сестер
 var maxFirst_section_height = 910; //максимальная высота сестер
-var women_height = 810; //высота тетки в конце первого слайда
+var women_height = 750; //высота тетки в конце первого слайда
 var max_main_section_height = 1861;
 
 
@@ -38,8 +38,22 @@ jQuery(document).ready(function( $ ) {
 	_init_forms();/*!!!!*/
 	_init_responses();
 	_init_320();
+	
+	_text_transform();
+	
 });
 
+
+function _text_transform()
+{
+	var width = getDisplayWidth();
+	if (width<1180)
+	{
+		var txt = $(".col3 .hspacer.social").html();
+		$("footer .blue").append("<div class=\"n_contacts\">"+txt+"</div>");
+		$(".col3 .hspacer.social").html("");
+	}
+}
 
 
 
@@ -361,7 +375,7 @@ function _init_main_page_scroll()
 	{
 		
 		$(document).on('scroll', function() {
-			var h = 190;
+			var h = 150; /*190*/
 			var dist = $(window).scrollTop();
 			
 			

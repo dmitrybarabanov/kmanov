@@ -1,0 +1,475 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Cam';
+  src: url("../fonts/Cam.eot?#iefix") format("embedded-opentype"), url("../fonts/Cam.woff") format("woff"), url("../fonts/Cam.ttf") format("truetype"), url("../fonts/Camb.svg#Cambria") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype"), url("../fonts/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/**
+ * Wraps any styles in a retina media query.
+ */
+/**
+ * Option variable to define the spacing between images in the generated sprite
+ */
+/**
+ * A mixin to create retina sprites with hover & active states
+ *
+ * You have to register a pair of sprites using `{@link #retina-sprite-add}` and then you can use this mixin:
+ *
+ *     @include retina-sprite-add(icons, "icons/*.png", "icons-retina/*.png");
+ *
+ *     .my-icon {
+ *       @include retina-sprite(icon-name, icons);
+ *     }
+ *
+ * @param {String} $name
+ * @param {String} [$sprite-name]
+ * @param {Boolean} [$hover=false]
+ * @param {Boolean} [$active=false]
+ */
+/**
+ * @param {String} $name
+ * @param {String} $path
+ * @param {String} $path2x
+ */
+/**
+ * Mixin for retina backgrounds where you can't use a sprite.
+ *
+ * - Make sure you have a file@2x.png file additional to your file.png.
+ * - The mixin prepends $imgPath, which should be set globally at some point. Default is: "img/"
+ *
+ * Examples:
+ *     li {
+ *       @include retina-background(arrow, no-repeat 10px 15px)
+ *     }
+ *
+ *     a.external {
+ *       @include retina-background(external, no-repeat right)
+ *     }
+ *
+ * @param {String} $file Path to file relative to images folder defined in config.rb and without a file extension
+ * @param {Object} [$attr] Additional attributes like position or repetition. E.g. `no-repeat top right`
+ * @param {String} [$type] The file type.
+ */
+/**/
+/**/
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.all_width {
+  width: 100%;
+}
+
+.width_wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.intro_slide {
+  color: #fff;
+  height: 1168px;
+  background: url(../images/intro_slide.jpg) no-repeat;
+  background-size: auto 100%;
+  background-position: top center;
+  position: relative;
+}
+.intro_slide .width_wrapper {
+  height: 100%;
+}
+.intro_slide .logo {
+  left: 0px;
+  top: 46px;
+  position: absolute;
+}
+.intro_slide .bilet {
+  right: 84px;
+  top: 58px;
+  position: absolute;
+}
+.intro_slide .bilet_info {
+  right: 23px;
+  top: 31px;
+  position: absolute;
+  text-align: right;
+}
+.intro_slide .bottom_info {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+.intro_slide .bottom_info .bilet {
+  right: auto;
+  top: auto;
+  position: relative;
+  display: inline-block;
+  margin: 50px 0 77px 0;
+}
+.intro_slide .bottom_info .bilet:before {
+  position: absolute;
+  content: '';
+  width: 91px;
+  height: 2px;
+  left: -117px;
+  top: 23px;
+  background-color: #415658;
+}
+.intro_slide .bottom_info .bilet:after {
+  position: absolute;
+  content: '';
+  width: 91px;
+  height: 2px;
+  right: -117px;
+  top: 23px;
+  background-color: #415658;
+}
+.intro_slide h1 {
+  text-shadow: 0px 0px 2px rgba(32, 42, 49, 0.8);
+  font-size: 17px;
+  line-height: 24px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+.intro_slide h1 span {
+  text-shadow: 0px 0px 2px rgba(32, 42, 49, 0.8);
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 47px;
+  line-height: 50px;
+  font-family: 'Cam';
+}
+.intro_slide .sledstvie {
+  display: inline-block;
+  margin: 0 auto;
+  width: 821px;
+  height: 100px;
+  margin-bottom: 0px;
+  background-image: url('../images/sprites/icons-s77063a77ba.png');
+  background-position: 0 -161px;
+  background-repeat: repeat-y;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+  margin-bottom: -12px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .intro_slide .sledstvie {
+    background-image: url('../images/sprites-retina/icons-s4310d23159.png');
+    -moz-background-size: 821px 261px;
+    -o-background-size: 821px 261px;
+    -webkit-background-size: 821px 261px;
+    background-size: 821px 261px;
+    background-position: 0 -161px;
+  }
+}
+.intro_slide .date_info {
+  text-shadow: 0px 0px 2px rgba(32, 42, 49, 0.8);
+  font-size: 30px;
+  padding-bottom: 22px;
+}
+.intro_slide .date_info br {
+  display: none;
+}
+
+.logo {
+  background-image: url('../images/sprites/icons-s77063a77ba.png');
+  background-position: 0 -47px;
+  background-repeat: repeat-y;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+  width: 198px;
+  height: 50px;
+  display: block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .logo {
+    background-image: url('../images/sprites-retina/icons-s4310d23159.png');
+    -moz-background-size: 821px 261px;
+    -o-background-size: 821px 261px;
+    -webkit-background-size: 821px 261px;
+    background-size: 821px 261px;
+    background-position: 0 -47px;
+  }
+}
+
+.bilet {
+  background-image: url('../images/sprites/icons-s77063a77ba.png');
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+  width: 173px;
+  height: 45px;
+  display: block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .bilet {
+    background-image: url('../images/sprites-retina/icons-s4310d23159.png');
+    -moz-background-size: 821px 261px;
+    -o-background-size: 821px 261px;
+    -webkit-background-size: 821px 261px;
+    background-size: 821px 261px;
+    background-position: 0 0;
+  }
+}
+
+.bilet_info {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.top_menu_buttom {
+  background-image: url('../images/sprites/icons-s77063a77ba.png');
+  background-position: 0 -99px;
+  background-repeat: repeat-y;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  z-index: 11;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .top_menu_buttom {
+    background-image: url('../images/sprites-retina/icons-s4310d23159.png');
+    -moz-background-size: 821px 261px;
+    -o-background-size: 821px 261px;
+    -webkit-background-size: 821px 261px;
+    background-size: 821px 261px;
+    background-position: 0 -99px;
+  }
+}
+
+.top_menu {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  color: #fff;
+  /*fon*/
+}
+.top_menu.open {
+  display: block;
+}
+.top_menu .top_menu_wrapper {
+  margin: 64px 0 0 219px;
+  display: inline-block;
+  padding: 10px;
+}
+.top_menu a {
+  display: inline-block;
+  padding: 0 7px;
+}
+.top_menu a:hover {
+  color: #f2d17e;
+  font-weight: bold;
+}
+
+.top_menu.fon .top_menu_wrapper {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.numberone_slide {
+  height: 431px;
+  position: relative;
+}
+.numberone_slide .txt_block {
+  color: #fff;
+  padding: 0px 538px 0 0;
+  text-align: right;
+}
+.numberone_slide .txt_block p {
+  color: #3f3f3f;
+  padding-bottom: 22px;
+}
+.numberone_slide .txt_block p b {
+  line-height: 22px;
+}
+.numberone_slide .txt_block p.red {
+  font-size: 14px;
+  color: #c40b02;
+  padding-top: 5px;
+  line-height: 17px;
+  padding-bottom: 18px;
+}
+.numberone_slide .txt_block p.red b {
+  line-height: 17px;
+}
+.numberone_slide .txt_block .bilet {
+  display: inline-block;
+}
+.numberone_slide h2 {
+  margin: 75px 0 21px 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-weight: bold;
+}
+.numberone_slide h2 span {
+  text-shadow: 0px 0px 2px rgba(32, 42, 49, 0.8);
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 47px;
+  line-height: 50px;
+  font-family: 'Cam';
+}
+
+.dino_slide {
+  height: 817px;
+  background: url(../images/dino_slide.png) no-repeat;
+  background-size: auto 100%;
+  background-position: top center;
+}
+
+a {
+  color: inherit;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #000;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+table {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a, img, a:active, a:focus {
+  outline: none;
+}
+
+p {
+  line-height: 19px;
+}
+
+b {
+  font-weight: bold;
+}
+
+br.clear {
+  clear: both;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+/*@import "320";
+@import "480";
+@import "768";
+@import "1024";
+@import "1400";
+*/

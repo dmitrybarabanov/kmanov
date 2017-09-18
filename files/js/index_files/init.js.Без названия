@@ -1,0 +1,71 @@
+var mobileWidth = 1023;
+var is_mobile = true;
+var min_slide_height = 1168; //минимальная высота первого слайда
+var max_slide_height = 1168; //минимальная высота первого слайда
+
+jQuery(document).ready(function( $ ) {
+
+	is_mobile = ($(window).width()<=mobileWidth);
+	is_desktopmap = ($(window).width()<=1199);
+
+	_init_first_slide();
+	_init_top_menu();
+	
+	$(window).on('resize', function(){
+		_init_first_slide();
+		
+		
+	});
+	
+	
+	
+});
+
+function _init_top_menu()
+{
+	$(document).on("click",".top_menu_buttom",function(event) {
+		event.preventDefault();
+		
+		if ($(".top_menu").hasClass("open"))
+		{
+			$(".top_menu").removeClass("open");
+		}
+		else 
+		{
+			$(".top_menu").addClass("open");
+		}
+	});
+	
+	
+	$(document).on('scroll', function() {
+		var h = 100;
+		var dist = $(window).scrollTop();
+		
+		
+		if (dist > h )
+		{
+			$(".top_menu").addClass("fon");
+		}
+		else
+		{
+			$(".top_menu").removeClass("fon");
+		}
+		
+		
+		
+	});
+	
+	
+	
+}
+
+function _init_first_slide()
+{
+	var h = $(window).height();
+	
+	if (h<min_slide_height)	h = min_slide_height;
+	if (h>max_slide_height)	h = max_slide_height;
+	
+	$(".intro_slide").height(h+"px");
+	
+}
