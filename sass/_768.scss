@@ -6,6 +6,9 @@ $icons-sprite-dimensions: true;
 	
 	nav ul li.last {padding-right: 10px;}
 	
+	nav  ul li{padding: 13px 15px 10px 15px;}
+	nav  ul { margin-right: -5px;}
+	
 	
 	body, html {
 	  font-size: 14px;
@@ -21,7 +24,7 @@ $icons-sprite-dimensions: true;
 	
 	.first_info { padding-right: 10px;}
 
-	
+	/*
 	.logo, .inner_page .logo {
 		
 			width: 110px;
@@ -34,12 +37,36 @@ $icons-sprite-dimensions: true;
 			z-index:1002;
 			@include opacity(1);
 		}
+		
+		
 	.inner_page .logo {
 		top: 73px;
 		left: 38px;
 	}
+	*/
 	
-	.common_header {height: 182px; }
+	
+	.logo{
+		width: 110px;
+		height: 38px;
+		@include retina-sprite(logom);
+		display: block;
+		
+		left: 10px;
+		top: 65px;
+		z-index:1002;
+		@include opacity(1);
+	}
+		
+		
+	.inner_page .logo {
+		top: 25px;
+		left: 10px;
+	}
+	
+	    
+	
+	.common_header {height: 134px; }
 	
 	.inner_page .blog_slide { height: auto;}
 	
@@ -390,6 +417,7 @@ $icons-sprite-dimensions: true;
 	
 	.swiper_padding_wrapper.for_foto { 
 		margin: 0 -10px 0 -10px;
+		margin: 0px;
 		.swiper-slide { margin-top: 0px;}
 
 		.swiper-button-next {
@@ -405,7 +433,8 @@ $icons-sprite-dimensions: true;
 	
 	h2.subttl {
 
-		margin: 0px -10px 0px -10px;
+		/*margin: 0px -10px 0px -10px;*/
+		margin: 0px;
 		background-color: #23282e;
 		display: block;
 		padding: 20px 0 20px 0;
@@ -432,13 +461,16 @@ $icons-sprite-dimensions: true;
 
 		.blog_width_wrapper {
 			
+			background: url(../images/bg_blog2.jpg) 100% 100%  no-repeat;
+			background-size: cover;
+			
 			position: static;
 			top: 0;
 			left: 0;
 
 			h2 {
 				margin: 0;
-				padding: 20px 0;
+				padding: 40px 0 46px 0;
 			}
 			
 		}
@@ -448,13 +480,25 @@ $icons-sprite-dimensions: true;
 		.swiper_padding_wrapper.for_blog
 		{
 			margin: 0 auto;
-			width: 818px;
+			width: 100%;
+			padding: 0 35px;
 			
 			.swiper-button-next.resp, .swiper-button-prev.resp {margin-top: -34px;}
+			
+			.swiper-button-next.blog
+			{
+				right: 3px;
+			}
+			.swiper-button-prev.blog
+			{
+				left: 3px;
+			}
 		}
 		
 		#blog_slider{
 			height: auto;
+			padding-bottom: 40px;
+			
 			
 			.swiper-wrapper {
 				.swiper-slide {
@@ -523,7 +567,12 @@ $icons-sprite-dimensions: true;
 
 	.blog_slide.inner_page_wrapper { border-top: 0px;}
 	
-	
+	.video_wrapper {
+		width: 100%;
+		height: 400px;
+		margin-top: -20px;
+		padding-bottom: 40px;
+	}	
 	
 
 	

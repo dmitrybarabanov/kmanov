@@ -16,15 +16,7 @@ function AutoViewport() {}
 	  document.getElementsByTagName('head')[0].appendChild(viewPortTag);
 	};
 
-	var isPortraitOrientation = function() {
-	  switch(window.orientation) {  
-	  case -90:
-	  case 90:
-	  return false;
-	  }
-
-	  return true;
-	 };
+	
 
 	var getDisplayWidth = function() {
 	  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
@@ -82,3 +74,13 @@ var getDisplayWidth = function() {
 
   return screen.width;
 }
+
+var isPortraitOrientation = function() {
+	  switch(window.orientation) {  
+	  case -90:
+	  case 90:
+	  return false;
+	  }
+
+	  return true;
+	 };
