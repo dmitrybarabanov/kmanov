@@ -114,8 +114,8 @@ $icons-sprite-dimensions: true;
 		.col2, .col3  {
 			width: auto;
 			padding: 0 10px;
-			line-height: 20px;
-			font-size: 14px;
+			line-height: 21px;
+			font-size: 16px;
 			float: none;
 			text-align: center;
 		}
@@ -163,7 +163,7 @@ $icons-sprite-dimensions: true;
 			
 			.left_info {
 					
-				    font-size: 14px;     position: absolute;
+				    font-size: 16px;     position: absolute;
 				    bottom: 85px;
 					color: #fff;
 					}
@@ -204,7 +204,7 @@ $icons-sprite-dimensions: true;
 	
 	.first_slide {
     /* height: 1235px; */
-		height: 948px;
+		height: 1050px;
 	}
 	
 	.about_k {
@@ -440,7 +440,7 @@ $icons-sprite-dimensions: true;
 			
 			.item.first, .item {
 				margin: 0px 0px 10px 0px;
-				float: left;
+				float: none;
 				margin-right: 14px;
 				
 			}
@@ -469,14 +469,17 @@ $icons-sprite-dimensions: true;
 		
 		
 		.swiper-button-next, .swiper-button-prev, .swiper-button-next.foto, .swiper-button-prev.foto, .swiper-button-next.resp, .swiper-button-prev.resp {
-			width: 45px;
+			/*width: 45px;
 			height: 60px;
-			bottom: -82px;
+			bottom: -82px;*/
+			width: 23px;
+			height: 30px;
+			bottom: -63px;
 			top: auto;
 		}
 		
 		.swiper-button-next, .swiper-button-next.foto, .swiper-button-next.resp {
-			@include retina-sprite(hand-r);
+			@include retina-sprite(hand-r2);
 			right: auto;
 			left: 53%;
 		}
@@ -485,7 +488,7 @@ $icons-sprite-dimensions: true;
 			left: auto;
 			right: 53%;
 			
-			@include retina-sprite(hand-l);
+			@include retina-sprite(hand-l2);
 		}
 		
 		
