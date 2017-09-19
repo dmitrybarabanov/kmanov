@@ -2120,6 +2120,12 @@ input.wt.error, textarea.wt.error {
   display: none;
 }
 
+.response_link {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 9px 5px 5px 5px;
+}
+
 /*#guarantee	{ position: absolute; top: -90px; left: 0px; width:1px; height: 1px; }*/
 @media screen and (max-width: 767px) {
   h2 {
